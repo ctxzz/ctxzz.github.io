@@ -30,10 +30,10 @@ content:
   email: omata.atsushi.open@gmail.com
   # phone: 888 888 88 88
   address:
-    street: 3-5-1 Johoku
+    street: 1-20-1 Handayama
     city: Hamamatsu-shi
     region: Shizuoka
-    postcode: '432-8014'
+    postcode: '431-3192'
     country: Japan
     country_code: JP
   coordinates:

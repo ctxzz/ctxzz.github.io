@@ -14,10 +14,10 @@ role: Ph.D of Informatics
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Department of Informatics, Shizuoka University
-    url: https://www.inf.shizuoka.ac.jp/
-  - name: 3-5-1, Johoku, Naka-ku, Hamamatsu-shi, Shizuoka 432-8011, Japan
-  - name: Ishikawa laboratory
+  - name: Nx-CEC, Hamamatsu University School of Medicine
+    url: https://hama-med-nx-cec.com/
+  - name: 1-20-1, Handayama, Chuo-ku, Hamamatsu-shi, Shizuoka 431-3192, Japan
+  - name: Assistant Professor
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include artificial intelligence, human-computer interaction, educational technology and aging society.

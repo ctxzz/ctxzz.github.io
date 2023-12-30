@@ -22,6 +22,16 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Assistant Professor
+    company: Hamamatsu University School of Medicine
+    company_url: 'https://www.hama-med.ac.jp/'
+    # company_logo: ''
+    location: Shizuoka, JP
+    date_start: '2023-11-01'
+    date_end: ''
+    description: |2-
+        (Nx-CEC) Next Generation Center for Medicine, Engineering, and Informatics
+
   - title: Academic Researcher
     company: Shizuoka University
     company_url: ''
@@ -30,7 +40,8 @@ experience:
     date_start: '2021-04-01'
     date_end: ''
     description: |2-
-        Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project
+        Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project(~2023/03)
+        JST Sakigake "Personalized goal generation for maximizing individual Well-being" Project
 
   - title: Fellowship for early career researcher
     company: University of Stirling
