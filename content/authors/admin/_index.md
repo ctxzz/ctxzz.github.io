@@ -97,6 +97,6 @@ email: 'omata.atsushi.open@gmail.com'
 highlight_name: true
 ---
 
-Dr. Atsushi Omata (小俣 敦士 in Japanese) is currently a Postdoctoral Researcher at Shizuoka University. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.
+Dr. Atsushi Omata (小俣 敦士 in Japanese) is currently a Assistant Professor at Hamamatsu University School of Medicine. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resume{{< /staticref >}}.
