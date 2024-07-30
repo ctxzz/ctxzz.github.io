@@ -1,1 +1,0 @@
-DARPA Machine Common Sense プログラムの紹介とケアの人工知能学
