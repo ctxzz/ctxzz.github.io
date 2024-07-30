@@ -26,4 +26,4 @@ make update
 
 ## License
 
-The code and styles are licensed under the MIT license. [See project license.](LICENSE) 
+The code and styles are licensed under the MIT license. [See project license.](LICENSE.md) 
