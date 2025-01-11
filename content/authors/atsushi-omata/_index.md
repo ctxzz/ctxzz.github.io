@@ -74,8 +74,8 @@ profiles:
     # display:
     #   header: true
       
-  - icon: brands/facebook
-    link: https://www.facebook.com/omatats
+  # - icon: brands/facebook
+  #   link: https://www.facebook.com/omatats
 
   - icon: academicons/google-scholar
     link: https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja

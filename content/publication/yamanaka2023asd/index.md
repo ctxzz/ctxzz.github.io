@@ -30,7 +30,7 @@ abstract: "認知症ケア高度化のための人材育成教育として, 没�
 summary: 第28回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
+- Conference paper
 - PX
 - Immersive content
 categories: 

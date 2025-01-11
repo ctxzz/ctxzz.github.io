@@ -29,7 +29,7 @@ abstract: "認知症高齢者に対して質の高いケアを提供するため
 summary: 第21回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
+- Conference paper
 - Dementia care
 - Environmental sensing
 categories: 
