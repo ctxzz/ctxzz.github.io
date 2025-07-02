@@ -30,10 +30,10 @@ bio: My research interests include artificial intelligence, human-computer inter
 
 # Interests to show in About widget
 interests:
-  - 🧠 Artificial Intelligence
+  - 🧠 Symbolic AI
   - 👥 Human-Computer Interaction
-  - 📕 Educational Technology
-  - 👩‍🦽 Aging Society
+  - 🫀 Healthcare Informatics
+  - 📺 Video Analysis
 
 # Education to show in About widget
 education:
