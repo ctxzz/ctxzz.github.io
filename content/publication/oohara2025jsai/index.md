@@ -42,7 +42,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jsai2025/subject/2Win5-98/detail?lang=ja'
+url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win598/_article/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''

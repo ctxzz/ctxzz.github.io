@@ -42,7 +42,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'http://id.nii.ac.jp/1001/00239298/'
+url_pdf: 'https://ipsj.ixsq.nii.ac.jp/records/239418'
 url_code: ''
 url_dataset: ''
 url_poster: ''

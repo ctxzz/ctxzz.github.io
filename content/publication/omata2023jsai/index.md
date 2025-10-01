@@ -41,7 +41,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jsai2023/subject/3Xin4-21/detail'
+url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3Xin421/_article/-char/ja/'
 url_code: ''
 url_dataset: ''
 url_poster: ''
