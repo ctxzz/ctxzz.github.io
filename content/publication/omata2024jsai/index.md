@@ -39,7 +39,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jsai2024/subject/4Xin2-106/detail?lang=ja'
+url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin2106/_article/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''

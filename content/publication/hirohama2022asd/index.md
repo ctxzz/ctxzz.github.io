@@ -40,7 +40,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_view_main_item_detail&item_id=204573&item_no=1&page_id=13&block_id=8'
+url_pdf: 'https://ipsj.ixsq.nii.ac.jp/record/219903/files/IPSJ-CDS22035018.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''

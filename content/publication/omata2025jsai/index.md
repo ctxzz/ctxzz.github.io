@@ -43,7 +43,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jsai2025/subject/3Win5-84/detail'
+url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3Win584/_article/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''

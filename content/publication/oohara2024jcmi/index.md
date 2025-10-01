@@ -42,7 +42,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jcmi2024/subject/4-J-1-06/detail '
+url_pdf: 'https://confit.atlas.jp/guide/event/jcmi2024/subject/4-J-1-06/detail'
 url_code: ''
 url_dataset: ''
 url_poster: ''

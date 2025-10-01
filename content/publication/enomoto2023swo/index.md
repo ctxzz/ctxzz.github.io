@@ -38,7 +38,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/jsai2023/0/jsai2023_SW0-061/_article/-char/ja/'
+url_pdf: 'https://www.jstage.jst.go.jp/article/jsaisigtwo/2023/SWO-061/2023_04/_pdf/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''
