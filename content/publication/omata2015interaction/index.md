@@ -35,10 +35,10 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.interaction-ipsj.org/proceedings/2015/data/bib/B06.html'
 url_code: ''
 url_dataset: ''
 url_poster: ''

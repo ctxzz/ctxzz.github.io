@@ -11,7 +11,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2020-06-11T00:00:00+09:00"
-doi: "10.11517/pjsai.JSAI2020.0_3Rin440"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2020-06-11T00:00:00+09:00"
@@ -38,10 +37,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/pjsai.JSAI2020.0_3Rin440"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2020/0/JSAI2020_3Rin440/_article/-char/ja/'
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -10,7 +10,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2021-12-17T00:00:00+09:00"
-doi: "10.1145/3461615.3485402"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2021-12-17T00:00:00+09:00"
@@ -36,10 +35,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.1145/3461615.3485402"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

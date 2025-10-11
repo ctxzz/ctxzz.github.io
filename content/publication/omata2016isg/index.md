@@ -11,7 +11,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2016-09-28T00:00:00+09:00"
-doi: "10.4017/gt.2016.15.s.770.00"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2016-09-28T00:00:00+09:00"
@@ -39,7 +38,6 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

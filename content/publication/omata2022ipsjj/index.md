@@ -11,7 +11,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2022-02-15T00:00:00+09:00"
-doi: "10.20729/00216257"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-02-15T00:00:00+09:00"
@@ -39,7 +38,6 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

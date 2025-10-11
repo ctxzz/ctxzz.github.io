@@ -10,7 +10,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2015-05-30T00:00:00+09:00"
-doi: "10.11517/pjsai.JSAI2015.0_2M3NFC04a4"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2015-05-30T00:00:00+09:00"
@@ -35,10 +34,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/pjsai.JSAI2015.0_2M3NFC04a4"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

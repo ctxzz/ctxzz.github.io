@@ -20,8 +20,6 @@ authors:
 - Alasdair Rutherford
 - Mitsuhiro Sado
 date: "2024-09-04T00:00:00+09:00"
-doi: "10.1080/28324897.2024.2397951"
-
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-09-04T00:00:00+09:00"
 
@@ -47,6 +45,11 @@ tags:
 - Open access
 categories: 
 featured: false
+
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.1080/28324897.2024.2397951"
 
 # links:
 # - name: ""

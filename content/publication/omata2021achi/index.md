@@ -8,7 +8,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2021-05-08T00:00:00+09:00"
-doi: "10.1145/3429360.3468173"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2021-05-08T00:00:00+09:00"
@@ -37,7 +36,6 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://dl.acm.org/doi/fullHtml/10.1145/3429360.3468173
 url_code: ''
 url_dataset: ''
 url_poster: ''

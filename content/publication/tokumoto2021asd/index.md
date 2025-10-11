@@ -35,10 +35,10 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=204573&item_no=1&page_id=13&block_id=8'
 url_code: ''
 url_dataset: ''
 url_poster: ''

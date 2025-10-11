@@ -34,19 +34,18 @@ categories:
 # Is this a featured talk? (true/false)
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+
 image:
   caption: ''
-  focal_point: 
+  focal_point: ''
 
-#links:
-#  - icon: twitter
-#    icon_pack: fab
-#    name: Follow
-#    url: https://twitter.com/georgecushen
+links:
+- name: "Video"
+  url: ""
+  type: video
 url_code: ''
-url_pdf: 'https://jhuma.org/wp-content/uploads/2022/07/soukai-4-1.pdf'
 url_slides: ''
-url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.

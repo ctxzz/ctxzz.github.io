@@ -8,8 +8,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2024-09-26T00:00:00+09:00"
-doi: ""
-
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-09-26T00:00:00+09:00"
 
@@ -39,10 +37,12 @@ tags:
 categories: 
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: 'https://ipsj.ixsq.nii.ac.jp/records/239418'
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+
+links:
+- name: "PDF"
+  url: "https://ipsj.ixsq.nii.ac.jp/records/239418"
+  type: pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

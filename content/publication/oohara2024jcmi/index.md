@@ -39,10 +39,10 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://confit.atlas.jp/guide/event/jcmi2024/subject/4-J-1-06/detail'
 url_code: ''
 url_dataset: ''
 url_poster: ''

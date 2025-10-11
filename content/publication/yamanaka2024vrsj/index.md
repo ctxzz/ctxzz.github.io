@@ -38,10 +38,10 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://conference.vrsj.org/ac2024/program/doc/3A2-02.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''

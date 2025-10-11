@@ -14,7 +14,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2019-06-07T00:00:00+09:00"
-doi: "doi.org/10.11517/pjsai.JSAI2019.0_4Rin116"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2019-06-07T00:00:00+09:00"
@@ -41,10 +40,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "doi.org/10.11517/pjsai.JSAI2019.0_4Rin116"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

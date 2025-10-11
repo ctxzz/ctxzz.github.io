@@ -12,8 +12,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2025-05-29T00:00:00+09:00"
-doi: "10.11517/pjsai.JSAI2025.0_3Win584"
-
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-05-29T00:00:00+09:00"
 
@@ -40,10 +38,15 @@ tags:
 categories: 
 featured: false
 
-# links:
-# - name: ""
-#   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3Win584/_article/-char/ja'
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/pjsai.JSAI2025.0_3Win584"
+
+links:
+- name: "PDF"
+  url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3Win584/_article/-char/ja"
+  type: pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

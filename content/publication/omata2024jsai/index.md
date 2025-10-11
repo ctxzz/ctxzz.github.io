@@ -8,7 +8,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2024-05-31T00:00:00+09:00"
-doi: "10.11517/pjsai.JSAI2024.0_4Xin2106"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-05-31T00:00:00+09:00"
@@ -36,10 +35,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/pjsai.JSAI2024.0_4Xin2106"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin2106/_article/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''

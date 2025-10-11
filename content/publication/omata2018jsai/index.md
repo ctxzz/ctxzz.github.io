@@ -14,7 +14,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2018-06-05T00:00:00+09:00"
-doi: "10.11517/pjsai.JSAI2018.0_3Pin146"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2018-06-05T00:00:00+09:00"
@@ -41,10 +40,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/pjsai.JSAI2018.0_3Pin146"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2018/0/JSAI2018_3Pin146/_article/-char/ja/'
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -8,7 +8,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2023-11-25T00:00:00+09:00"
-doi: "10.11517/jsaisigtwo.2023.SWO-061_04"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-11-25T00:00:00+09:00"
@@ -35,10 +34,13 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
+hugoblox:
+  ids:
+    doi: "10.11517/jsaisigtwo.2023.SWO-061_04"
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.jstage.jst.go.jp/article/jsaisigtwo/2023/SWO-061/2023_04/_pdf/-char/ja'
 url_code: ''
 url_dataset: ''
 url_poster: ''

@@ -37,10 +37,10 @@ tags:
 categories: 
 featured: false
 
+# View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://ipsj.ixsq.nii.ac.jp/record/219903/files/IPSJ-CDS22035018.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
