@@ -29,6 +29,23 @@ enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+# Performance optimizations
+minify:
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    css:
+      keepCSS2: true
+    html:
+      keepWhitespace: false
+    js:
+      keepVarNames: false
+    json:
+      keepNumbers: false
+    svg:
+      keepComments: false
+    xml:
+      keepWhitespace: false
 permalinks:
   authors: "/author/:slug/"
   event: "/talk/:slug/"

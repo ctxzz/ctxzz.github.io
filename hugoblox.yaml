@@ -1,0 +1,33 @@
+# HugoBlox configuration file
+# Documentation: https://docs.hugoblox.com/
+
+# Site configuration
+site:
+  title: "Atsushi Omata"
+  description: "Academic CV and Research Portfolio"
+  base_url: "https://omata.me/"
+  language: "en"
+
+# Theme configuration
+theme:
+  name: "academic-cv"
+  version: "latest"
+
+# Build configuration
+build:
+  hugo_version: "0.151.0+extended"
+  go_version: "1.21"
+
+# Modules configuration
+modules:
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+# Features
+features:
+  analytics: true
+  comments: false
+  search: true
+  dark_mode: true
+  math: false
+  privacy_pack: false

@@ -100,6 +100,12 @@ extensions:
   hugoblox:
     suppress_warnings: true
     disable_sections_warning: true
+    # Performance optimizations
+    enable_google_analytics: false
+    enable_baidu_tongji: false
+    enable_commento: false
+    enable_disqus: false
+    enable_giscus: false
 
 # Security
 
