@@ -3,7 +3,7 @@ title: "Visualization of environmental adjustment skills focusing on indoor vent
 authors:
 - Shinya Kiriyama
 - Junichi Yogo
-- Atsushi Omata
+- admin
 - Shogo Ishikawa
 author_notes:
 - "Equal contribution"

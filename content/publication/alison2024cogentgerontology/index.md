@@ -13,7 +13,7 @@ authors:
 - Melanie Lovatt
 - Vikki McCall
 - Ryoji Noritake
-- Atsushi Omata
+- admin
 - Lesley Palmer
 - Martin Quirke
 - Judith Phillips

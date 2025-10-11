@@ -1,7 +1,7 @@
 ---
 title: "Collaborative Development of Outing Assistants for People with Dementia: A Case Study on a Co-design Approach"
 authors:
-- Atsushi Omata
+- admin
 - Shogo Ishikawa
 - Mia Kobayashi
 - Shinya Kiriyama

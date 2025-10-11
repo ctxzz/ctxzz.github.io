@@ -3,7 +3,7 @@ title: "Gait Condition Assessment Methods for Visualizing Interventional Experti
 authors:
 - Akinori Kunishima
 - Koki Suzuki
-- Atsushi Omata
+- admin
 - Shogo Ishikawa
 - Shinya Kiriyama
 author_notes:

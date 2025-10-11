@@ -3,7 +3,7 @@ title: "A Development of a Multimodal Behavior Analysis System for Evaluating De
 authors:
 - Shogo Ishikawa
 - Masashi Onozuka
-- Atsushi Omata
+- admin
 - Ayumi Nakanome
 - Sota Kayama
 - Shinya Kiriyama

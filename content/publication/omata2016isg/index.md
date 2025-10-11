@@ -1,7 +1,7 @@
 ---
 title: "Constructing a video-based remote coaching platform to develop professional skills in dementia care"
 authors:
-- Atsushi Omata
+- admin
 - Yutaka Sakane
 - Shogo Ishikawa
 - Miwako Honda
