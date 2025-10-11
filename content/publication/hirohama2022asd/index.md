@@ -5,7 +5,7 @@ authors:
 - 村橋 遼
 - 島尾 青空
 - 國島 明徳
-- 小俣 敦士
+- admin
 - 桐山 伸也
 author_notes:
 - "Equal contribution"

@@ -3,7 +3,7 @@ title: "ナレッジグラフに基づくチャットボットを活用したリ
 authors:
 - 榎本 優香
 - 増川 ねてる
-- 小俣 敦士
+- admin
 - 石川 翔吾
 author_notes:
 - "Equal contribution"

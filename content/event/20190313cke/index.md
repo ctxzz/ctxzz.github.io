@@ -25,7 +25,7 @@ all_day: false
 publishDate: '2019-03-13T00:00:00+09:00'
 
 authors:
-  - atsushi-omata
+  - admin
 
 tags: 
   - Presentation

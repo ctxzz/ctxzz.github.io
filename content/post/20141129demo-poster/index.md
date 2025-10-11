@@ -3,7 +3,7 @@ title: Demonstration/Poster Award
 summary:  
 date: 2014-11-29
 authors:
-  - atsushi-omata
+  - admin
 tags:
   - News
   - Awards & Grants

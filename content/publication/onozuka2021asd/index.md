@@ -4,7 +4,7 @@ authors:
 - 小野塚 優志
 - 中野目 あゆみ
 - 香山 壮太
-- 小俣 敦士
+- admin
 - 石川 翔吾
 - 桐山 伸也
 author_notes:

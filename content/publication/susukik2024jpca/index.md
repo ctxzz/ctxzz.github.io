@@ -5,7 +5,7 @@ authors:
 - 齊藤 岳児
 - 成瀨 愛子
 - 有馬 秀幸
-- 小俣 敦士
+- admin
 - 西澤 潤一
 - 中村 和正
 author_notes:

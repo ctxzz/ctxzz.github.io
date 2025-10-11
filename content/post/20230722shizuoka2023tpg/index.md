@@ -4,7 +4,7 @@ summary:
 date: 2023-07-22
 authors:
   - Shogo Ishikawa
-  - atsushi-omata
+  - admin
 tags:
   - News
   - Awards & Grants

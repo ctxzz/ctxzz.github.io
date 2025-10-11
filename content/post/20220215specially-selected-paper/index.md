@@ -3,7 +3,7 @@ title: Specially Selected Paper(Information Processing Society of Japan)
 summary:  
 date: 2022-02-15
 authors:
-  - atsushi-omata
+  - admin
 tags:
   - News
   - Awards & Grants

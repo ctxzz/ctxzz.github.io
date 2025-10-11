@@ -4,7 +4,7 @@ authors:
 - 山中 望
 - 村上 佑順
 - 宗形 初枝
-- 小俣 敦士
+- admin
 - 石川 翔吾
 author_notes:
 - "Equal contribution"

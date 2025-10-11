@@ -2,7 +2,7 @@
 title: "認知症当事者とのco-productionによるPX体験空間の構築"
 authors:
 - 廣部 敬太
-- 小俣 敦士
+- admin
 - 水野 拓宏
 - 村上 佑順
 - 三浦 繁夫

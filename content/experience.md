@@ -12,7 +12,7 @@ design:
 sections:
   - block: resume-experience
     content:
-      username: atsushi-omata
+      username: admin
     design:
       # Hugo date format
       date_format: 'January 2006'
@@ -21,13 +21,13 @@ sections:
   - block: resume-skills
     content:
       title: Skills & Hobbies
-      username: atsushi-omata
+      username: admin
     design:
       show_skill_percentage: false
   - block: resume-awards
     content:
       title: Certifications
-      username: atsushi-omata
+      username: admin
 #   - block: resume-languages
 #     content:
 #       title: Languages

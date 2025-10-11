@@ -1,7 +1,7 @@
 ---
 title: "認知症ケアの組織学習を促すためのケアインタラクション分析に基づく映像学習環境の実践"
 authors:
-- 小俣 敦士
+- admin
 author_notes:
 - "Equal contribution"
 date: "2021-11-20T00:00:00+09:00"

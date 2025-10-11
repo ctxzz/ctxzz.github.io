@@ -4,7 +4,7 @@ authors:
 - 島尾 青空
 - 丸山 大智
 - 藤田 憲一郎
-- 小俣 敦士
+- admin
 - 石川 翔吾
 - 桐山 伸也
 author_notes:

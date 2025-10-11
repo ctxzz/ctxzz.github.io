@@ -3,7 +3,7 @@ title: Special Theme Session Award (Social Interaction)
 summary:  
 date: 2018-12-13
 authors:
-  - atsushi-omata
+  - admin
 tags:
   - News
   - Awards & Grants
