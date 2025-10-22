@@ -84,7 +84,7 @@ profiles:
     link: https://github.com/ctxzz
 
   - icon: brands/linkedin
-    link: https://www.linkedin.com/in/admin-79541b80/
+    link: https://www.linkedin.com/in/omata-atsushi/
 
 # - icon: speaker-deck
 #   icon_pack: fab
