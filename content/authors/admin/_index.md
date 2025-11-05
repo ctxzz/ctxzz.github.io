@@ -237,4 +237,4 @@ awards:
 
 ## About Me
 
-Dr. Atsushi Omata (admin in Japanese) is currently a Assistant Professor at Hamamatsu University School of Medicine. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.
+Dr. Atsushi Omata (小俣敦士 in Japanese) is currently a Assistant Professor at Hamamatsu University School of Medicine. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.
