@@ -82,7 +82,8 @@ sections:
       filters:
         folders:
           - post
-        tags: "Awards & Grants"
+        tags:
+          - "Awards & Grants"
     design:
       columns: '2'
       view: card
