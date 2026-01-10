@@ -18,6 +18,21 @@ brew install hugo
 make server
 ```
 
+**Note:** For local development with search functionality, you need to generate the Pagefind search index:
+
+```sh
+# Build the site first
+hugo
+
+# Generate search index
+npx pagefind --site "public"
+
+# Then run the server
+hugo server
+```
+
+The GitHub Actions workflow automatically generates the search index during deployment.
+
 ### Update hugo modules
 
 ```sh
