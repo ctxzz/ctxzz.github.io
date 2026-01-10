@@ -7,11 +7,11 @@ authors:
 - Yujun Murakami
 author_notes:
 - "Equal contribution"
-date: "2025-01-01T00:00:00+09:00"
+date: "2025-11-09T00:00:00+09:00"
 doi: "10.1145/3694907.3765926"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-01-01T00:00:00+09:00"
+publishDate: "2025-11-09T00:00:00+09:00"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
