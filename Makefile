@@ -1,6 +1,7 @@
 .PHONY : update
 update :
-	./update_wowchemy.sh
+	hugo mod get -u ./...
+	hugo mod tidy
 
 .PHONY : server
 server :
