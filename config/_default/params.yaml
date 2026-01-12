@@ -1,172 +1,114 @@
-# ═════════════════════════════════════════════════════════════════════
-# HUGO BLOX CONFIGURATION
-# Schema: hugoblox.com/schema/v2
-# Tutorial: https://docs.hugoblox.com/tutorial/
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# ═════════════════════════════════════════════════════════════════════
-hugoblox:
-  schema: "2.0"
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-  # ────────────────────────────────────────────────────────────────────
-  # IDENTITY
-  # ────────────────────────────────────────────────────────────────────
-  identity:
-    name: "Atsushi Omata"
-    organization: ""
-    type: person
-    tagline: ""
+# Appearance
+
+appearance:
+  mode: system
+  color: cyan
+
+# SEO
+
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ""
+    org_name: ""
     description: ""
-    social:
-      twitter: "ctxzz"
+    twitter: "ctxzz"
+  analytics:
+    google_analytics: ""
+    baidu_tongji: ""
+  verification:
+    google: ""
+    baidu: ""
 
-  # ────────────────────────────────────────────────────────────────────
-  # THEME
-  # ────────────────────────────────────────────────────────────────────
-  theme: 
-    mode: system
-    pack: "default"
-    colors:
-      primary: "cyan"
-      secondary: ""
-      neutral: ""
+# Site header
 
-  # ────────────────────────────────────────────────────────────────────
-  # TYPOGRAPHY
-  # ────────────────────────────────────────────────────────────────────
-  typography:
-    font: "sans"
-    size: "md"
-
-  # ────────────────────────────────────────────────────────────────────
-  # LAYOUT
-  # ────────────────────────────────────────────────────────────────────
-  layout:
-    radius: "md"
-    spacing: "comfortable"
-    avatar_shape: circle
-
-  # ────────────────────────────────────────────────────────────────────
-  # HEADER
-  # ────────────────────────────────────────────────────────────────────
-  header:
+header:
+  navbar:
     enable: true
-    style: navbar
-    sticky: true
-    align: center
-    search: true
-    theme_toggle: true
-    theme_picker: true
-    language_switcher: false
-    cta: 
-      enable: false
+    block: "navbar"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: "Atsushi Omata"
 
-  # ────────────────────────────────────────────────────────────────────
-  # FOOTER
-  # ────────────────────────────────────────────────────────────────────
-  footer:
-    style: minimal
-    language_switcher: false
-    text: ""
+# Site footer
 
-  # ────────────────────────────────────────────────────────────────────
-  # COPYRIGHT
-  # ────────────────────────────────────────────────────────────────────
-  copyright: 
-    notice: "© {year} {name}. This work is licensed under {license}"
-    license: 
-      type: cc
+footer:
+  copyright:
+    notice: "© {year} Me. This work is licensed under {license}"
+    license:
+      enable: true
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-  # ────────────────────────────────────────────────────────────────────
-  # SEO
-  # ────────────────────────────────────────────────────────────────────
-  seo:
-    title: ""
-    ai: 
-      allow: 
-        - /
-      disallow: []
+# Localization
 
-  # ────────────────────────────────────────────────────────────────────
-  # CONTENT
-  # ────────────────────────────────────────────────────────────────────
-  content:
-    math: 
-      enable: false
-    toc:
-      enable: true
-    reading_time: 
-      enable: true
-    citations:
-      style: apa
+locale:
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
+  address_format: en-us
 
-  # ────────────────────────────────────────────────────────────────────
-  # SEARCH
-  # ────────────────────────────────────────────────────────────────────
-  search:
-    enable: true
-    suggestions: []
-    quick_actions: []
+# Site features
 
-  # ────────────────────────────────────────────────────────────────────
-  # COMMENTS
-  # ────────────────────────────────────────────────────────────────────
-  comments:
+features:
+  syntax_highlighter:
+    theme_light: github-light
+    theme_dark: dracula
+  math:
     enable: false
-    provider: ""
-
-  # ────────────────────────────────────────────────────────────────────
-  # ANALYTICS
-  # ────────────────────────────────────────────────────────────────────
-  analytics:
-    google: 
-      measurement_id: ""
-    google_tag_manager:
-      container_id: ""
-
-  # ────────────────────────────────────────────────────────────────────
-  # VERIFICATION
-  # ────────────────────────────────────────────────────────────────────
-  verification:
-    google: ""
-    bing: ""
-    baidu: ""
-
-  # ────────────────────────────────────────────────────────────────────
-  # REPOSITORY
-  # ────────────────────────────────────────────────────────────────────
+  privacy_pack:
+    enable: false
   repository:
-    enable: true
     url: "https://github.com/ctxzz/ctxzz.github.io"
-    branch: main
     content_dir: content
+    branch: main
+  avatar:
+    gravatar: true
+    shape: circle
+  comment:
+    provider: ""
+    disqus:
+      shortname: ""
+      show_count: true
+    commento:
+      url: ""
+    giscus:
+      repo: ""
+      repo_id: ""
+      category: ""
+      category_id: ""
+  map:
+    provider: "mapnik"
+    api_key: ""
+    zoom: 15
 
-  # ────────────────────────────────────────────────────────────────────
-  # LOCALE
-  # ────────────────────────────────────────────────────────────────────
-  locale:
-    date_format: "Jan 2, 2006"
-    time_format: "3:04 PM"
-    address_format: en-us
+# Extensions
 
-  # ────────────────────────────────────────────────────────────────────
-  # SECURITY
-  # ────────────────────────────────────────────────────────────────────
-  security:
-    frame_options: sameorigin
+extensions:
+  cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+  hugoblox:
+    suppress_warnings: true
+    disable_sections_warning: true
+    # Performance optimizations
+    enable_google_analytics: false
+    enable_baidu_tongji: false
+    enable_commento: false
+    enable_disqus: false
+    enable_giscus: false
 
-  # ────────────────────────────────────────────────────────────────────
-  # PRIVACY
-  # ────────────────────────────────────────────────────────────────────
-  privacy:
-    enable: false
-    anonymize_analytics: true
+# Security
 
-  # ────────────────────────────────────────────────────────────────────
-  # PRO
-  # ────────────────────────────────────────────────────────────────────
-  pro:
-    hide_attribution: false
-    affiliate_code: ""
+security:
+  # Allow frame for embedding speaker notes in slides
+  allow_frame: true
