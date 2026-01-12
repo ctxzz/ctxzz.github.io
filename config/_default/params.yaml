@@ -1,114 +1,172 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
+# ═════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Tutorial: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# ═════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
 
-# Appearance
-
-appearance:
-  mode: system
-  color: cyan
-
-# SEO
-
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ""
-    org_name: ""
+  # ────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # ────────────────────────────────────────────────────────────────────
+  identity:
+    name: "Atsushi Omata"
+    organization: ""
+    type: person
+    tagline: ""
     description: ""
-    twitter: "ctxzz"
-  analytics:
-    google_analytics: ""
-    baidu_tongji: ""
-  verification:
-    google: ""
-    baidu: ""
+    social:
+      twitter: "ctxzz"
 
-# Site header
+  # ────────────────────────────────────────────────────────────────────
+  # THEME
+  # ────────────────────────────────────────────────────────────────────
+  theme: 
+    mode: system
+    pack: "default"
+    colors:
+      primary: "cyan"
+      secondary: ""
+      neutral: ""
 
-header:
-  navbar:
+  # ────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ────────────────────────────────────────────────────────────────────
+  typography:
+    font: "sans"
+    size: "md"
+
+  # ────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ────────────────────────────────────────────────────────────────────
+  layout:
+    radius: "md"
+    spacing: "comfortable"
+    avatar_shape: circle
+
+  # ────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ────────────────────────────────────────────────────────────────────
+  header:
     enable: true
-    block: "navbar"
-    fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true
-    logo:
-      text: "Atsushi Omata"
+    style: navbar
+    sticky: true
+    align: center
+    search: true
+    theme_toggle: true
+    theme_picker: true
+    language_switcher: false
+    cta: 
+      enable: false
 
-# Site footer
+  # ────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ────────────────────────────────────────────────────────────────────
+  footer:
+    style: minimal
+    language_switcher: false
+    text: ""
 
-footer:
-  copyright:
-    notice: "© {year} Me. This work is licensed under {license}"
-    license:
-      enable: true
+  # ────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ────────────────────────────────────────────────────────────────────
+  copyright: 
+    notice: "© {year} {name}. This work is licensed under {license}"
+    license: 
+      type: cc
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-# Localization
+  # ────────────────────────────────────────────────────────────────────
+  # SEO
+  # ────────────────────────────────────────────────────────────────────
+  seo:
+    title: ""
+    ai: 
+      allow: 
+        - /
+      disallow: []
 
-locale:
-  date_format: "Jan 2, 2006"
-  time_format: "3:04 PM"
-  address_format: en-us
+  # ────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ────────────────────────────────────────────────────────────────────
+  content:
+    math: 
+      enable: false
+    toc:
+      enable: true
+    reading_time: 
+      enable: true
+    citations:
+      style: apa
 
-# Site features
-
-features:
-  syntax_highlighter:
-    theme_light: github-light
-    theme_dark: dracula
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
-  repository:
-    url: "https://github.com/ctxzz/ctxzz.github.io"
-    content_dir: content
-    branch: main
-  avatar:
-    gravatar: true
-    shape: circle
-  comment:
-    provider: ""
-    disqus:
-      shortname: ""
-      show_count: true
-    commento:
-      url: ""
-    giscus:
-      repo: ""
-      repo_id: ""
-      category: ""
-      category_id: ""
-  map:
-    provider: "mapnik"
-    api_key: ""
-    zoom: 15
-
-# Extensions
-
-extensions:
-  cms:
-    branch: main
-    local_backend: false
-  academicons:
+  # ────────────────────────────────────────────────────────────────────
+  # SEARCH
+  # ────────────────────────────────────────────────────────────────────
+  search:
     enable: true
-  hugoblox:
-    suppress_warnings: true
-    disable_sections_warning: true
-    # Performance optimizations
-    enable_google_analytics: false
-    enable_baidu_tongji: false
-    enable_commento: false
-    enable_disqus: false
-    enable_giscus: false
+    suggestions: []
+    quick_actions: []
 
-# Security
+  # ────────────────────────────────────────────────────────────────────
+  # COMMENTS
+  # ────────────────────────────────────────────────────────────────────
+  comments:
+    enable: false
+    provider: ""
 
-security:
-  # Allow frame for embedding speaker notes in slides
-  allow_frame: true
+  # ────────────────────────────────────────────────────────────────────
+  # ANALYTICS
+  # ────────────────────────────────────────────────────────────────────
+  analytics:
+    google: 
+      measurement_id: ""
+    google_tag_manager:
+      container_id: ""
+
+  # ────────────────────────────────────────────────────────────────────
+  # VERIFICATION
+  # ────────────────────────────────────────────────────────────────────
+  verification:
+    google: ""
+    bing: ""
+    baidu: ""
+
+  # ────────────────────────────────────────────────────────────────────
+  # REPOSITORY
+  # ────────────────────────────────────────────────────────────────────
+  repository:
+    enable: true
+    url: "https://github.com/ctxzz/ctxzz.github.io"
+    branch: main
+    content_dir: content
+
+  # ────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  # ────────────────────────────────────────────────────────────────────
+  # SECURITY
+  # ────────────────────────────────────────────────────────────────────
+  security:
+    frame_options: sameorigin
+
+  # ────────────────────────────────────────────────────────────────────
+  # PRIVACY
+  # ────────────────────────────────────────────────────────────────────
+  privacy:
+    enable: false
+    anonymize_analytics: true
+
+  # ────────────────────────────────────────────────────────────────────
+  # PRO
+  # ────────────────────────────────────────────────────────────────────
+  pro:
+    hide_attribution: false
+    affiliate_code: ""
