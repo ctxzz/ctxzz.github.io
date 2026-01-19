@@ -39,6 +39,8 @@ The GitHub Actions workflow automatically generates the search index during depl
 make update
 ```
 
+**Note:** Automatic module updates via GitHub Actions have been disabled due to compatibility issues with the HugoBlox module migration. To update modules, run `make update` locally and commit the changes.
+
 ## License
 
 The code and styles are licensed under the MIT license. [See project license.](LICENSE.md) 
