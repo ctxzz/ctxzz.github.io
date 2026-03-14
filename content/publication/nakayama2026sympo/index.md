@@ -34,7 +34,7 @@ tags:
 - Data analysis
 - Public-private partnership
 categories: 
-featured: true
+featured: false
 
 # View (1 = List, 2 = Compact, 3 = Card, 4 = Citation, 5 = Showcase)
 links:
