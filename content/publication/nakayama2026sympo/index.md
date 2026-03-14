@@ -40,7 +40,9 @@ featured: true
 links:
   - name: 第34回全国救急隊員シンポジウム
     url: https://34kumamoto99sympo.com/
-url_pdf: 'https://34kumamoto99sympo.com/wp-content/uploads/2025/12/%E6%8A%84%E9%8C%B2%E9%9B%86%EF%BC%91%E6%97%A5%E7%9B%AE.pdf#page=5'
+  - name: "PDF"
+    url: 'https://34kumamoto99sympo.com/wp-content/uploads/2025/12/%E6%8A%84%E9%8C%B2%E9%9B%86%EF%BC%91%E6%97%A5%E7%9B%AE.pdf#page=5'
+    type: pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
