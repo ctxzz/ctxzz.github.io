@@ -9,11 +9,11 @@ authors:
 - 石川 翔吾
 author_notes:
 - "Equal contribution"
-date: "2026-03-14T00:00:00+09:00"
+date: "2026-03-17T00:00:00+09:00"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2026-03-14T00:00:00+09:00"
+publishDate: "2026-03-17T00:00:00+09:00"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -25,7 +25,7 @@ publication_types: ["Domestic conference"]
 publication: "第35回高齢社会デザイン (ASD) 研究会"
 publication_short: "ASD 2026"
 
-abstract: ""
+abstract: "認知症の症状は後天的な脳機能の障害によって生じるため，個別性が高く多様であり，ケアの場面では柔軟な対応が求められる．本研究では，認知症ケア教育のための多視点学習手法の確立に向けて，VR を活用した患者体験（PX）空間とAI アバターを用いた介入について検討した．第一に，一人称視点の体 験として，認知症当事者とリアルタイムで対話しながらプロトタイピングを行う共創実験を実施し，当事者の主観的体験を反映した VR コンテンツを構築した．第二に，二人称視点の体験として，認知症当事者 を模倣した AI アバターを導入し，誘導の有無による批判的思考の違いを検討する予備実験を行った．これら検討から，当事者との共創による設計の重要性と，AI アバターが学習者の内省を支援する可能性が示 唆された．"
 
 # Summary. An optional shortened abstract.
 summary: 第35回高齢社会デザイン (ASD) 研究会

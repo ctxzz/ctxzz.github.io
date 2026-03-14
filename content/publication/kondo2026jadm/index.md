@@ -14,11 +14,11 @@ authors:
 - 三澤 清
 author_notes:
 - "Equal contribution"
-date: "2026-01-16T00:00:00+09:00"
+date: "2026-03-19T00:00:00+09:00"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2026-01-16T00:00:00+09:00"
+publishDate: "2026-03-19T00:00:00+09:00"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -27,13 +27,13 @@ publishDate: "2026-01-16T00:00:00+09:00"
 publication_types: ["Domestic conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: "日本災害医療学会 第31回学術集会"
+publication: "第31回日本災害医療学会 総会・学術集会"
 publication_short: "JADM 2026"
 
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: 日本災害医療学会 第31回学術集会
+summary: 第31回日本災害医療学会 総会・学術集会
 
 tags:
 - Conference paper
@@ -44,7 +44,7 @@ categories:
 featured: false
 
 links:
-  - name: 日本災害医療学会 第31回学術集会
+  - name: 第31回日本災害医療学会 総会・学術集会
     url: https://shinsen-mc.co.jp/jadm31/
   - name: セッション情報
     url: https://pub.confit.atlas.jp/ja/event/jadm31/session/1R816-23

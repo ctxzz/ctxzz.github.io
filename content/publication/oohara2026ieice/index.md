@@ -20,13 +20,13 @@ publishDate: "2026-03-01T00:00:00+09:00"
 publication_types: ["Domestic conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: "電子情報通信学会 研究会報告"
-publication_short: "IEICE 2026"
+publication: "電子情報通信学会 ヒューマンコミュニケーション基礎研究会（HCS）"
+publication_short: "HCS 2026"
 
-abstract: ""
+abstract: "本研究では，医療に関する意思決定において，ユーザ自身の価値観や状況に基づいて自己内省を支援するための対話エージェントの設計を行なった．実際のチャット相談における相談者の感情的態度推定，支援者の応答特徴を参考にエージェントの内部構造を設計した．複数のエージェントを用いた対話シミュレーションの結果，感情に寄り添う応答は利用者の感情改善を促す一方で，第三者からは低い評価を得る場合があることが明らかとなった．このことから，相談支援における対話エージェントの役割は，感情支援を重視する応答と問題整理を重視する応答を，利用者の状態や対話の段階に応じて使い分ける設計が重要であることが示唆された．"
 
 # Summary. An optional shortened abstract.
-summary: 電子情報通信学会 研究会報告
+summary: 電子情報通信学会 ヒューマンコミュニケーション基礎研究会（HCS）
 
 tags:
 - Conference paper
@@ -38,7 +38,7 @@ categories:
 featured: false
 
 links:
-  - name: 電子情報通信学会 研究会報告
+  - name: 電子情報通信学会 ヒューマンコミュニケーション基礎研究会（HCS）
     url: https://ken.ieice.org/ken/paper/20260301Octd/
 url_pdf: ''
 url_code: ''
