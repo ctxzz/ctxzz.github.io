@@ -7,8 +7,8 @@ first_name: Atsushi
 last_name: Omata
 
 # Status emoji
-status:
-  icon: 🐰
+# status:
+#   icon: 
 
 # Is this the primary user of the site?
 superuser: true
@@ -21,8 +21,8 @@ role: Assistant Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Nx-CEC, Hamamatsu University School of Medicine
-    url: https://hama-med-nx-cec.com/
+  - name: Hamamatsu University School of Medicine
+    url: https://www.hama-med.ac.jp/
   - name: 1-20-1, Handayama, Chuo-ku, Hamamatsu-shi, Shizuoka 431-3192, Japan
 
 # Short bio (displayed in user profile at end of posts)
@@ -68,14 +68,17 @@ profiles:
   - icon: envelope
     url: 'mailto:omata.atsushi.open@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    link: https://twitter.com/ctxzz
+  # - icon: brands/x
+  #   link: https://twitter.com/ctxzz
     # label: Follow me on Twitter
     # display:
     #   header: true
       
   # - icon: brands/facebook
   #   link: https://www.facebook.com/omatats
+
+  - icon: hero/academic-cap
+    link: https://researchmap.jp/a_omata
 
   - icon: academicons/google-scholar
     link: https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja
@@ -103,7 +106,8 @@ work:
     date_start: '2023-11-01'
     date_end: ''
     summary: |2-
-        (Nx-CEC) Next Generation Center for Medicine, Engineering, and Informatics
+        - (Nx-CEC) Next Generation Center for Medicine, Engineering, and Informatics(~2026/03)
+        - Advanced Healthcare Informatics
 
   - position: Academic Researcher
     company_name: Shizuoka University
@@ -113,8 +117,7 @@ work:
     date_start: '2021-04-01'
     date_end: ''
     summary: |2-
-        - Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project(~2023/03)
-        - JST Sakigake "Personalized goal generation for maximizing individual Well-being" Project
+        Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project(~2023/03)
 
   - position: Fellowship for early career researcher
     company_name: University of Stirling
@@ -135,7 +138,7 @@ work:
     date_start: '2019-02-01'
     date_end: '2021-03-29'
     summary: |2-
-        - NEDO SIP Second Phase, "A R&D and social implementation of AI for self-reliance support by multimodal human-interaction technology with the emphasis on dementia people and their family's view" Project
+        NEDO SIP Second Phase, "A R&D and social implementation of AI for self-reliance support by multimodal human-interaction technology with the emphasis on dementia people and their family's view" Project
 
   - position: Academic Researcher
     company_name: Shizuoka University
