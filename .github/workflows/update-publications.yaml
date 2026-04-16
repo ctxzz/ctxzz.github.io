@@ -1,0 +1,195 @@
+name: Monthly Publications Update (Copilot Agent)
+
+on:
+  schedule:
+    # Run at 09:00 JST (00:00 UTC) on the 1st of every month
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run – create issue but skip Copilot assignment'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-update-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------ #
+      # Ensure the tracking label exists before querying / creating issues  #
+      # ------------------------------------------------------------------ #
+      - name: Ensure label exists
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "auto-publications" \
+            --description "Issue created by the monthly publications update workflow" \
+            --color "0075ca" \
+            --repo "${{ github.repository }}" \
+          || true   # Ignore error if the label already exists
+
+      # ------------------------------------------------------------------ #
+      # Skip if an open issue for this month already exists                 #
+      # ------------------------------------------------------------------ #
+      - name: Check for duplicate open issue
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MONTH_TAG="[$(date '+%Y-%m')]"
+          EXISTING=$(gh issue list \
+            --label "auto-publications" \
+            --state open \
+            --json title \
+            --jq ".[] | select(.title | contains(\"$MONTH_TAG\")) | .title" \
+            --repo "${{ github.repository }}" | head -1)
+          if [ -n "$EXISTING" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Found existing open issue for $MONTH_TAG – skipping."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ------------------------------------------------------------------ #
+      # Build metadata used in the issue body                               #
+      # ------------------------------------------------------------------ #
+      - name: Collect metadata
+        if: steps.check.outputs.skip == 'false'
+        id: meta
+        run: |
+          echo "date=$(date '+%Y-%m')"            >> "$GITHUB_OUTPUT"
+          echo "year=$(date '+%Y')"               >> "$GITHUB_OUTPUT"
+          echo "month=$(date '+%m')"              >> "$GITHUB_OUTPUT"
+          PUB_DIR="content/publication"
+          if [ -d "$PUB_DIR" ]; then
+            COUNT=$(find "$PUB_DIR" -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
+            RECENT=$(find "$PUB_DIR" -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort | tail -20 | paste -sd ', ')
+          else
+            COUNT=0
+            RECENT="(none)"
+          fi
+          echo "count=$COUNT"   >> "$GITHUB_OUTPUT"
+          echo "recent=$RECENT" >> "$GITHUB_OUTPUT"
+
+      # ------------------------------------------------------------------ #
+      # Create the issue and assign it to the Copilot coding agent          #
+      # ------------------------------------------------------------------ #
+      - name: Create issue for Copilot agent
+        if: steps.check.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: |
+          ASSIGNEE_FLAG=""
+          if [ "$DRY_RUN" != "true" ]; then
+            ASSIGNEE_FLAG="--assignee github-copilot[bot]"
+          fi
+
+          # Build the issue body using a heredoc so special characters are safe
+          BODY=$(cat <<'EOF'
+          ## 月次業績自動更新タスク
+
+          小俣 敦士 (Atsushi Omata) の最新業績をWebから収集し、このリポジトリへ追加してPRを作成してください。
+
+          ---
+
+          ### 🔍 検索先URL（優先順）
+
+          1. **researchmap** — https://researchmap.jp/a_omata
+             - 「研究論文」「発表・講演」「書籍等出版物」タブをすべて確認すること
+          2. **Google Scholar** — https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja
+          3. **CiNii Research** — https://cir.nii.ac.jp/search?q=%E5%B0%8F%E4%BF%A3%E6%95%A6%E5%A3%AB&type=researcher
+
+          ---
+
+          ### 📋 手順
+
+          1. 上記URLにアクセスして最新業績一覧を取得する
+          2. `content/publication/` ディレクトリの**既存業績と照合**し、まだ追加されていないものを特定する
+          3. `.ai/prompts/add-publications.md` に記載のテンプレートと命名規則に従ってファイルを作成する
+          4. 新規ブランチ（`auto/publications-YYYY-MM` など）を切り、変更をコミットしてPRを作成する
+
+          ---
+
+          ### 📁 ディレクトリ命名規則
+
+          `<筆頭著者の姓（ローマ字）><発表年><学会略称>` （すべて小文字）
+
+          | 例 | 説明 |
+          |---|---|
+          | `omata2026jsai` | 小俣, 2026年, JSAI |
+          | `hirobe2025vrsj` | 廣部, 2025年, VRSJ |
+          | `oohara2026ieice` | 大原, 2026年, IEICE |
+
+          よく使う学会略称: `jsai` / `vrsj` / `cihcd` / `asd` / `ieice` / `ipsj` / `interaction` / `gcce` / `jpca`
+
+          ---
+
+          ### 📝 index.md テンプレート
+
+          ```yaml
+          ---
+          title: "論文タイトル"
+          authors:
+          - admin          # 小俣本人は "admin" と記載
+          - 著者名2
+          author_notes:
+          - "Equal contribution"
+          date: "YYYY-MM-DDT00:00:00+09:00"
+          doi: ""
+          publishDate: "YYYY-MM-DDT00:00:00+09:00"
+          publication_types: ["Domestic conference"]
+          publication: "学会名の正式名称"
+          publication_short: "学会略称 YYYY"
+          abstract: "アブストラクト本文"
+          summary: "学会名の正式名称"
+          tags:
+          - Conference paper
+          categories:
+          featured: false
+          links:
+            - name: 学会名
+              url: 学会ページURL
+          url_pdf: ''
+          url_code: ''
+          url_dataset: ''
+          url_poster: ''
+          url_project: ''
+          url_slides: ''
+          url_source: ''
+          url_video: ''
+          image:
+            caption: ''
+            focal_point: ""
+            preview_only: true
+          projects: []
+          slides: ""
+          ---
+          ```
+
+          ---
+
+          ### ⚠️ 注意事項
+
+          - 著者名の先頭の「〇」「◯」マークおよび所属（括弧書き）は除去すること
+          - 小俣 敦士 / Atsushi Omata は `admin` と記載すること
+          - 日付が不明な場合は学会開催日を使用し、不明なら発表年の `YYYY-01-01T00:00:00+09:00` とすること
+          - 既存業績との重複追加は避けること（タイトルやDOIで確認）
+          - 詳細は `.ai/prompts/add-publications.md` を参照
+
+          EOF
+          )
+
+          gh issue create \
+            --title "🤖 [${{ steps.meta.outputs.date }}] 月次業績自動更新" \
+            --label "auto-publications" \
+            --body "$BODY" \
+            $ASSIGNEE_FLAG \
+            --repo "${{ github.repository }}"
