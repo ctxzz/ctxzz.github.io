@@ -57,6 +57,7 @@ GitHub API を使って `content/publication/` ディレクトリ内のフォル
    - 「研究論文」「発表・講演」「書籍等出版物」タブを順に確認する
 2. **Google Scholar** — https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja
 3. **CiNii Research** — https://cir.nii.ac.jp/search?q=%E5%B0%8F%E4%BF%A3%E6%95%A6%E5%A3%AB&type=researcher
+   （クエリ `%E5%B0%8F%E4%BF%A3%E6%95%A6%E5%A3%AB` は「小俣敦士」をURLエンコードしたもの）
 
 ---
 
@@ -72,7 +73,7 @@ GitHub API を使って `content/publication/` ディレクトリ内のフォル
 新しい業績が見つかった場合は、以下の情報を含む GitHub Issue を1件作成してください。
 
 ### Issue タイトル
-「月次業績追加 YYYY-MM: N件の新規業績」（年月・件数を実際の値に置き換える）
+「月次業績追加 {YYYY}-{MM}: {N}件の新規業績」（{YYYY}・{MM}・{N} を実際の値に置き換える）
 
 ### Issue 本文
 
@@ -139,7 +140,7 @@ slides: ""
 ```
 
 **注意事項**
-- 著者名の先頭の「〇」「◯」マーク・所属（括弧書き）は除去すること
+- 著者名の先頭の発表者マーク（「〇」U+25CB や「◯」U+25EF など、丸囲みの記号すべて）・所属（括弧書き）は除去すること
 - 小俣 敦士 / Atsushi Omata は `admin` と記載すること
 - 日付が不明な場合は学会開催日を使用し、不明なら `YYYY-01-01T00:00:00+09:00`
 - 既存業績との重複追加は避けること
