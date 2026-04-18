@@ -1,0 +1,42 @@
+# リポジトリ Secrets の設定
+
+このドキュメントでは、本リポジトリの GitHub Actions ワークフローが必要とする Secrets と、その作成手順を説明します。
+
+---
+
+## COPILOT_GITHUB_TOKEN
+
+`update-publications` agentic ワークフロー（`workflows/update-publications.md`）が Copilot コーディングエージェントに Issue を割り当てる際に使用するトークンです。
+
+### 作成手順
+
+1. GitHub の **Settings → Developer settings → Personal access tokens → Fine-grained tokens** を開く
+2. **Generate new token** をクリック
+3. 以下のとおり設定する
+
+| 項目 | 値 |
+|------|-----|
+| Token name | 任意（例: `copilot-github-token-ctxzz`） |
+| Expiration | 任意（定期的に更新する場合は 90 日など） |
+| Resource owner | `ctxzz` |
+| Repository access | `Only select repositories` → `ctxzz.github.io` |
+
+**Repository permissions**
+
+| Permission | Access |
+|-----------|--------|
+| Contents | Read-only |
+
+> **最小権限の原則**: 現在の `COPILOT_GITHUB_TOKEN` は Copilot CLI 認証にのみ使用されるため、リポジトリ権限は必要最小限にしてください。`Issues` や `Pull requests` の権限、および `Contents` の書き込み権限は付与しません。
+
+**Account permissions**
+
+| Permission | Access |
+|-----------|--------|
+| Copilot Chat | Read-only |
+
+> **注意**: Fine-grained PAT の Account permissions に「GitHub Copilot」という項目は存在しません。**「Copilot Chat」** を選択してください。
+
+4. **Generate token** をクリックしてトークンをコピーする
+5. リポジトリの **Settings → Secrets and variables → Actions → New repository secret** を開く
+6. Name に `COPILOT_GITHUB_TOKEN`、Secret にコピーしたトークンを貼り付けて **Add secret** をクリックする
