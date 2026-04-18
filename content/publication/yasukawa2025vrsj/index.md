@@ -43,6 +43,7 @@ featured: false
 links:
   - name: 第30回日本バーチャルリアリティ学会大会
     url: https://conference.vrsj.org/ac2025/index.html
+url_pdf: 'https://conference.vrsj.org/ac2025/program/doc/1B2-09.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
