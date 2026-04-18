@@ -6,7 +6,7 @@
 
 ## COPILOT_GITHUB_TOKEN
 
-`update-publications` アgentic ワークフロー（`workflows/update-publications.md`）が Copilot コーディングエージェントに Issue を割り当てる際に使用するトークンです。
+`update-publications` agentic ワークフロー（`workflows/update-publications.md`）が Copilot コーディングエージェントに Issue を割り当てる際に使用するトークンです。
 
 ### 作成手順
 
