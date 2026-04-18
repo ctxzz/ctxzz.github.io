@@ -25,9 +25,9 @@
 
 | Permission | Access |
 |-----------|--------|
-| Contents | Read and write |
-| Issues | Read and write |
-| Pull requests | Read and write |
+| Contents | Read-only |
+
+> **最小権限の原則**: 現在の `COPILOT_GITHUB_TOKEN` は Copilot CLI 認証にのみ使用されるため、リポジトリ権限は必要最小限にしてください。`Issues` や `Pull requests` の権限、および `Contents` の書き込み権限は付与しません。
 
 **Account permissions**
 
