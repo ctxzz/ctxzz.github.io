@@ -43,7 +43,7 @@ featured: false
 
 links:
   - name: 第53回日本救急医学会総会・学術集会
-    url: https://researchmap.jp/a_omata/presentations/53319925
+    url: https://site.convention.co.jp/jaam53/
 url_pdf: ''
 url_code: ''
 url_dataset: ''
