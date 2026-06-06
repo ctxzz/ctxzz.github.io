@@ -47,8 +47,10 @@
 
 name: "月次業績自動追加エージェント"
 "on":
-  schedule:
-  - cron: "0 0 1 * *"
+  # 月次の自動実行は一時停止中（手動実行のみ有効）。
+  # 再開は update-publications.md の schedule を有効化し `gh aw compile` で再生成。
+  # schedule:
+  # - cron: "0 0 1 * *"
   workflow_dispatch:
     inputs:
       aw_context:
