@@ -1,7 +1,9 @@
 ---
 on:
-  schedule:
-    - cron: '0 0 1 * *'   # 毎月1日 00:00 UTC (09:00 JST)
+  # 月次の自動実行は一時停止中。再開するには下記 schedule のコメントを解除し、
+  # `gh aw compile` で update-publications.lock.yml を再生成すること。
+  # schedule:
+  #   - cron: '0 0 1 * *'   # 毎月1日 00:00 UTC (09:00 JST)
   workflow_dispatch:
 
 permissions:
