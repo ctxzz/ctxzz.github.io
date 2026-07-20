@@ -8,7 +8,6 @@ authors:
 author_notes:
 - "Equal contribution"
 date: "2025-11-09T00:00:00+09:00"
-doi: "10.1145/3694907.3765926"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-11-09T00:00:00+09:00"
