@@ -9,6 +9,7 @@
     "tailwindcss": "^4.3.3"
   },
   "overrides": {
-    "tar": "^7.5.16"
+    "tar": "^7.5.16",
+    "browserslist": "^4.28.9"
   }
 }
