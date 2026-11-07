@@ -29,7 +29,6 @@ abstract: "歩行と姿勢の状態改善は心身健康な生活を送るため
 summary: "第24回高齢社会デザイン (ASD) 研究会"
 
 tags:
-- Journal article
 - Gait and posture
 - Body sensing
 categories: 

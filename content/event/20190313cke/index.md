@@ -2,7 +2,7 @@
 title: DARPA Machine Common Sense プログラムの紹介とケアの人工知能学
 
 event: 人工知能学会第２種研究会「コモンセンス知識と情動研究会」第12回研究会
-event_url: http://sig-cse.jp/schedule.html#190313
+event_url: ''
 
 location: 静岡大学浜松キャンパス
 address:

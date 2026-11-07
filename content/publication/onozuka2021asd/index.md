@@ -29,7 +29,6 @@ abstract: "認知症ケアの現場において，ケアの質をデータに基
 summary: 第20回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Interaction model
 categories: 

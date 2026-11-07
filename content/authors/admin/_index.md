@@ -23,7 +23,6 @@ role: Assistant Professor
 organizations:
   - name: Hamamatsu University School of Medicine
     url: https://www.hama-med.ac.jp/
-  - name: 1-20-1, Handayama, Chuo-ku, Hamamatsu-shi, Shizuoka 431-3192, Japan
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include artificial intelligence, human-computer interaction, educational technology and aging society.
@@ -45,7 +44,7 @@ education:
         Thesis: "A Study on Construction and Practical Evaluation of Video Coaching Environment to Support Acquisition of Care Interaction Skills"
     button:
       text: 'Read Thesis'
-      url: 'https://ci.nii.ac.jp/naid/500001534710'
+      url: 'https://cir.nii.ac.jp/crid/1910302385670001664'
   - area: MSc in Informatics
     institution: Shizuoka University
     date_start: 2015-04-01

@@ -32,7 +32,6 @@ abstract: "本稿では, 認知症ケアの高度化に向けて, 構造化映�
 summary: 第8回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Collaborative learning
 categories: 

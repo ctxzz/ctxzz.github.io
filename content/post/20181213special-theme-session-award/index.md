@@ -22,5 +22,3 @@ The prize at HCG2018 as the third author of our conference paper "Construction o
 HCG2018: Human Communication Group Symposium 2018 (HCG2018), Japan, December 12-13, 2018.
 
 https://www.hcg-ieice.org/
-
-https://www.ieice.org/hcg/symposium2018/sites.google.com/a/hcg-symposium.org/2018/award.html

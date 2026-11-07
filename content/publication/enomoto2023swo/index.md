@@ -26,7 +26,6 @@ abstract: "リカバリー概念の獲得支援を行うために, 独自のデ�
 summary: "第61回SWO研究会"
 
 tags:
-- Journal article
 - Knowledge graph
 - Chatbot
 categories: 

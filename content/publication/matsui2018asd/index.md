@@ -33,7 +33,6 @@ abstract: "本稿では，指導者の認知症ケアコーチング知をMinsky
 summary: 第14回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Collaborative learning
 categories: 
