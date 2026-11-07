@@ -91,7 +91,7 @@ work:
     # company_logo: ''
     location: Shizuoka, JP
     date_start: '2021-04-01'
-    date_end: ''
+    date_end: '2023-03-31'
     summary: |2-
         Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project(~2023/03)
 
