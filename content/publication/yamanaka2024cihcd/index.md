@@ -7,8 +7,6 @@ authors:
 - 菅家 穣
 - 香山 壮太
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-10-19T00:00:00+09:00"
 doi: ""
 
@@ -34,7 +32,7 @@ tags:
 - Conference paper
 - Dementia care
 - Patient experience
-- Virtual reality
+- VR
 
 categories: 
 featured: false

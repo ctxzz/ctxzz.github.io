@@ -10,8 +10,6 @@ authors:
 - 本田 美和子
 - 原 寿夫
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2017-06-12T00:00:00+09:00"
 doi: ""
 

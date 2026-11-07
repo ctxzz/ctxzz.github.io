@@ -7,8 +7,6 @@ authors:
 - 水野 拓宏
 - 村上 祐順
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2025-09-10T00:00:00+09:00"
 doi: ""
 

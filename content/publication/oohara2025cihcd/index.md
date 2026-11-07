@@ -5,8 +5,6 @@ authors:
 - admin
 - 尾藤 誠司
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2025-11-15T00:00:00+09:00"
 doi: ""
 
@@ -31,8 +29,8 @@ summary: みんなのケア情報学会 第8回年次大会
 tags:
 - Conference paper
 - Empathy
-- Chat Assistant
-- Large Language Model
+- Chat assistant
+- Large language model
 - Generative AI
 - Healthcare
 categories: 

@@ -32,5 +32,5 @@ The prize at Shizuoka Tech Plan Grand Prix as a member of Well-being Copilot tea
 - チーム名：Well-being Copilot
 - 発表者：静岡大学 石川 翔吾
 - テーマ：ケアDXによるWell-being 最大化
-- [授与機関] 株式会社リバネス
+- 授与機関：株式会社リバネス
 

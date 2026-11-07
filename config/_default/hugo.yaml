@@ -6,7 +6,7 @@
 # Website name
 title: Atsushi Omata
 # Website URL
-baseURL: "https://omata.me/"
+baseURL: "https://www.omata.me/"
 
 ############################
 ## LANGUAGE
@@ -48,13 +48,14 @@ minify:
       keepWhitespace: false
 permalinks:
   authors: "/author/:slug/"
-  event: "/talk/:slug/"
+  # Use the folder name (e.g. 20250313esports) so Japanese titles do not produce garbled URLs
+  event: "/talk/:contentbasename/"
   tags: "/tag/:slug/"
   categories: "/category/:slug/"
   publication_types: "/publication-type/:slug/"
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS, backlinks]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos

@@ -9,8 +9,6 @@ authors:
 - 畑 雅樹
 - 川本 実子
 - 中村 和正
-author_notes:
-- "Equal contribution"
 date: "2025-05-29T00:00:00+09:00"
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-05-29T00:00:00+09:00"
@@ -33,7 +31,7 @@ summary: 2025年度人工知能学会全国大会（第39回）
 tags:
 - Conference paper
 - e-sports
-- Multi-modal
+- Multimodal
 - Behavior analysis
 categories: 
 featured: false

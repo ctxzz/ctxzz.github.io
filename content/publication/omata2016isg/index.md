@@ -8,8 +8,6 @@ authors:
 - Mio Ito
 - Mia Kobayashi
 - Yoichi Takebayashi
-author_notes:
-- "Equal contribution"
 date: "2016-09-28T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

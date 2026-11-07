@@ -9,8 +9,6 @@ authors:
 - 金子 美和
 - 尾藤 誠司
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2025-05-28T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).
@@ -33,7 +31,7 @@ summary: 2025年度人工知能学会全国大会（第39回）
 
 tags:
 - Conference paper
-- Large Language Model
+- Large language model
 - Chatbot
 categories: 
 featured: false

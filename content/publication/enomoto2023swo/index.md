@@ -5,8 +5,6 @@ authors:
 - 増川 ねてる
 - admin
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2023-11-25T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

@@ -7,8 +7,6 @@ authors:
 - 香山 壮太
 - 菅家 穣
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-09-13T00:00:00+09:00"
 doi: ""
 
@@ -32,7 +30,7 @@ summary: 第29回日本バーチャルリアリティ学会大会
 
 tags:
 - Conference paper
-- Patient eXperience
+- Patient experience
 - Immersive content
 - Care education
 categories: 

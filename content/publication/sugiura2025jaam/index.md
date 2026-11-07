@@ -10,8 +10,6 @@ authors:
 - 高橋 喜明
 - 渥美 生弘
 - 前川 裕一郎
-author_notes:
-- "Equal contribution"
 date: "2025-10-29T00:00:00+09:00"
 doi: ""
 

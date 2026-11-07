@@ -8,8 +8,6 @@ authors:
 - 宗形 初枝
 - 坂根 裕
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2022-02-15T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).
@@ -31,7 +29,7 @@ abstract: 本論文は，認知症ケアの持続的なスキルアップに組�
 summary: 情報処理学会論文誌
 
 tags:
-- Journal
+- Journal article
 categories: 
 featured: true
 

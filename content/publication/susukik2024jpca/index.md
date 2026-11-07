@@ -8,8 +8,6 @@ authors:
 - admin
 - 西澤 潤一
 - 中村 和正
-author_notes:
-- "Equal contribution"
 date: "2024-06-09T00:00:00+09:00"
 doi: ""
 

@@ -11,8 +11,6 @@ authors:
 - 島野 光正
 - 桐山 伸也
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2018-09-01T00:00:00+09:00"
 doi: ""
 

@@ -5,8 +5,6 @@ authors:
 - 菊池 拓也
 - 石川 翔吾
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2015-02-26T00:00:00+09:00"
 doi: ""
 

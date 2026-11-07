@@ -58,44 +58,21 @@ education:
 email: 'omata.atsushi.open@gmail.com'
 
 # Social/Academic Networking
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 profiles:
-  # - icon: envelope
-  #   icon_pack: fas
-  #   link: '/#contact'
   - icon: envelope
     url: 'mailto:omata.atsushi.open@gmail.com'
     label: E-mail Me
-  # - icon: brands/x
-  #   link: https://twitter.com/ctxzz
-    # label: Follow me on Twitter
-    # display:
-    #   header: true
-      
-  # - icon: brands/facebook
-  #   link: https://www.facebook.com/omatats
-
   - icon: hero/academic-cap
-    link: https://researchmap.jp/a_omata
+    url: https://researchmap.jp/a_omata
 
   - icon: academicons/google-scholar
-    link: https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja
+    url: https://scholar.google.co.jp/citations?user=ZNBWz98AAAAJ&hl=ja
 
   - icon: brands/github
-    link: https://github.com/ctxzz
+    url: https://github.com/ctxzz
 
   - icon: brands/linkedin
-    link: https://www.linkedin.com/in/omata-atsushi/
-
-# - icon: speaker-deck
-#   icon_pack: fab
-#   link: https://speakerdeck.com/ctxzz
-
-# - icon: researchgate
-#   icon_pack: ai
-#   link: https://www.researchgate.net/profile/
+    url: https://www.linkedin.com/in/omata-atsushi/
 
 work:
   - position: Assistant Professor
@@ -147,7 +124,6 @@ work:
     location: Shizuoka, JP
     date_start: '2017-06-01'
     date_end: '2019-01-31'
-    description: 
 
   - position: Research Assistant
     company_name: Shizuoka University
@@ -156,7 +132,6 @@ work:
     location: Shizuoka, JP
     date_start: '2017-06-01'
     date_end: '2018-02-28'
-    description: 
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -183,7 +158,7 @@ skills:
         description: ''
         percent: 100
         icon: person-simple-walk
-      - name: watching movies
+      - name: Watching movies
         description: ''
         percent: 100
         icon: film
@@ -192,13 +167,6 @@ skills:
         percent: 100
         icon: camera
 
-# languages:
-#   - name: English
-#     percent: 100
-#   - name: Chinese
-#     percent: 75
-#   - name: Portuguese
-#     percent: 25
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
@@ -240,4 +208,4 @@ awards:
 
 ## About Me
 
-Dr. Atsushi Omata (小俣敦士 in Japanese) is currently a Assistant Professor at Hamamatsu University School of Medicine. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.
+Dr. Atsushi Omata (小俣敦士 in Japanese) is currently an Assistant Professor at Hamamatsu University School of Medicine. He received his M.S. in Informatics and Ph.D. degrees from Shizuoka University, Japan, in 2017 and 2022, respectively. His research interests include Artificial Intelligence, Human-Computer Interaction, Educational Technology, and Aging Society.

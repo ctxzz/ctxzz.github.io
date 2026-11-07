@@ -11,8 +11,6 @@ authors:
 - 坂根 裕
 - 本田 美和子
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2018-12-14T00:00:00+09:00"
 doi: ""
 

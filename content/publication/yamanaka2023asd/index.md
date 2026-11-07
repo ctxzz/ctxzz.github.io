@@ -6,8 +6,6 @@ authors:
 - 宗形 初枝
 - admin
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2023-11-23T00:00:00+09:00"
 doi: ""
 
@@ -31,7 +29,7 @@ summary: 第28回高齢社会デザイン (ASD) 研究会
 
 tags:
 - Conference paper
-- PX
+- Patient experience
 - Immersive content
 categories: 
 featured: false

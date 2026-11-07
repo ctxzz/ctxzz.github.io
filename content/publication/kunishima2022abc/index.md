@@ -6,8 +6,6 @@ authors:
 - admin
 - Shogo Ishikawa
 - Shinya Kiriyama
-author_notes:
-- "Equal contribution"
 date: "2022-10-29T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

@@ -5,8 +5,6 @@ authors:
 - admin
 - 石川 翔吾
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2021-09-02T00:00:00+09:00"
 doi: ""
 

@@ -6,8 +6,6 @@ authors:
 - 坂本 昌隆
 - admin
 - 中村 和正
-author_notes:
-- "Equal contribution"
 date: "2025-11-28T00:00:00+09:00"
 doi: ""
 

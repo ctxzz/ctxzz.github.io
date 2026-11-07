@@ -10,8 +10,6 @@ authors:
 - 山下 真理
 - 仲山 智士
 - 前川 裕一郎
-author_notes:
-- "Equal contribution"
 date: "2026-06-11T00:00:00+09:00"
 doi: ""
 

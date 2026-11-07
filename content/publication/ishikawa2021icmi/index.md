@@ -7,8 +7,6 @@ authors:
 - Ayumi Nakanome
 - Sota Kayama
 - Shinya Kiriyama
-author_notes:
-- "Equal contribution"
 date: "2021-12-17T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

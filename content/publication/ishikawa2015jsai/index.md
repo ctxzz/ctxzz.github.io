@@ -7,8 +7,6 @@ authors:
 - 加藤 忠相
 - 本田 美和子
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2015-05-30T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).
@@ -30,7 +28,7 @@ abstract: さまざまな介護現場で，認知症ケアの効果が現れ始�
 summary: 2015年度人工知能学会全国大会（第29回）
 
 tags:
-- Domestic conference paper
+- Conference paper
 categories: 
 featured: false
 

@@ -5,8 +5,6 @@ authors:
 - 成瀬 愛子
 - 齊藤 岳児
 - 前川 裕一郎
-author_notes:
-- "Equal contribution"
 date: "2025-11-15T00:00:00+09:00"
 doi: ""
 

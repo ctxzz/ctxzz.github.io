@@ -7,8 +7,6 @@ authors:
 - 國島 明徳
 - admin
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2022-09-06T00:00:00+09:00"
 doi: ""
 
