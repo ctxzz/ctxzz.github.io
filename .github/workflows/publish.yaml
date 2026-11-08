@@ -34,11 +34,24 @@ jobs:
         with:
           # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      # Hugo is cached so a GitHub release download outage does not block deploys
+      - name: Cache Hugo
+        id: hugo-cache
+        uses: actions/cache@v6
         with:
-          hugo-version: ${{ env.WC_HUGO_VERSION }}
-          extended: true
+          path: ~/.local/hugo
+          key: hugo-extended-${{ env.WC_HUGO_VERSION }}-${{ runner.os }}-${{ runner.arch }}
+      - name: Download Hugo
+        if: steps.hugo-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/hugo
+          curl -fsSL --retry 6 --retry-delay 15 --retry-all-errors -o "$RUNNER_TEMP/hugo.tar.gz" \
+            "https://github.com/gohugoio/hugo/releases/download/v${WC_HUGO_VERSION}/hugo_extended_${WC_HUGO_VERSION}_linux-amd64.tar.gz"
+          tar -xzf "$RUNNER_TEMP/hugo.tar.gz" -C ~/.local/hugo hugo
+      - name: Setup Hugo
+        run: |
+          echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
+          "$HOME/.local/hugo/hugo" version
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
