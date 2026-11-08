@@ -90,10 +90,11 @@ work:
     company_url: ''
     # company_logo: ''
     location: Shizuoka, JP
-    date_start: '2021-04-01'
-    date_end: '2023-03-31'
+    date_start: '2017-06-01'
+    date_end: ''
     summary: |2-
-        Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project(~2023/03)
+        - Ishikawa Team, JST CREST "Computational and cognitive neuroscientific approaches for understanding the tender care" Project (2021/04~2023/03)
+        - NEDO SIP Second Phase, "A R&D and social implementation of AI for self-reliance support by multimodal human-interaction technology with the emphasis on dementia people and their family's view" Project (2019/02~2021/03)
 
   - position: Fellowship for early career researcher
     company_name: University of Stirling
@@ -105,24 +106,6 @@ work:
     summary: |2-
         UK-Japan Network project.
         The work of the Network aims to address an area of major concern for both countries – that of increasing population of people living with dementia. Environmental design has been shown to be an effective means of improving people’s experiences of living with the condition, but there is a need for better evidence which takes account of cross-national and cross-cultural differences and similarities, and a need for the experience in each country to provide lesson for the other. The Network seeks to work internationally to generate an agenda for further research into these areas.
-
-  - position: Academic Researcher
-    company_name: Shizuoka University
-    company_url: ''
-    # company_logo: ''
-    location: Shizuoka, JP
-    date_start: '2019-02-01'
-    date_end: '2021-03-29'
-    summary: |2-
-        NEDO SIP Second Phase, "A R&D and social implementation of AI for self-reliance support by multimodal human-interaction technology with the emphasis on dementia people and their family's view" Project
-
-  - position: Academic Researcher
-    company_name: Shizuoka University
-    company_url: ''
-    # company_logo: ''
-    location: Shizuoka, JP
-    date_start: '2017-06-01'
-    date_end: '2019-01-31'
 
   - position: Research Assistant
     company_name: Shizuoka University
