@@ -171,8 +171,8 @@ const PROP = {
     ${[-105, -35, 35, 105].map((x, i) => `<path d="M${x} -84 V60" ${ln(2, '#46557a')}/><circle cx="${x}" cy="62" r="22" fill="none" stroke="${[C.rose, C.sky, C.butter, C.mint][i]}" stroke-width="5"/>`).join('')}
     <circle cx="-35" cy="-6" r="16" fill="${C.sky}"/><circle cx="105" cy="-46" r="16" fill="${C.mint}"/><circle cx="-105" cy="20" r="16" fill="${C.rose}"/><circle cx="35" cy="-60" r="16" fill="${C.butter}"/>`,
   footprints: (a) => {
-    const f = (x, y, r, c) => `<g transform="translate(${x} ${y}) rotate(${r})"><ellipse rx="20" ry="30" fill="${c}"/><circle cx="-12" cy="-40" r="6" fill="${c}"/><circle cx="0" cy="-44" r="6" fill="${c}"/><circle cx="12" cy="-40" r="6" fill="${c}"/></g>`;
-    return f(-120, 60, 70, shade(a, 0.2)) + f(-44, 10, 70, a) + f(32, 54, 70, shade(a, 0.2)) + f(108, 4, 70, a);
+    const f = (x, y, r, c, m) => `<g transform="translate(${x} ${y}) rotate(${r}) scale(${m} 1)"><path d="M0 -34 C16 -34 20 -14 16 4 C13 18 6 26 -2 26 C-12 26 -16 14 -16 0 C-16 -18 -12 -34 0 -34Z" fill="${c}"/><ellipse cx="0" cy="44" rx="11" ry="14" fill="${c}"/></g>`;
+    return f(-110, 80, 14, shade(a, 0.25), -1) + f(-50, 30, 18, a, 1) + f(16, -4, 14, shade(a, 0.25), -1) + f(80, -54, 18, a, 1);
   },
   sensor: (a) => `<circle cx="0" cy="44" r="26" fill="${NAVY}"/><circle cx="0" cy="44" r="10" fill="${a}"/>
     <path d="M-42 6 Q0 -30 42 6" ${ln(8, a)}/><path d="M-74 -24 Q0 -88 74 -24" ${ln(8, a)} opacity="0.7"/><path d="M-106 -54 Q0 -144 106 -54" ${ln(8, a)} opacity="0.4"/>`,
@@ -312,7 +312,15 @@ function accents(spec, r, cols, list = ['dots', 'plus', 'wave', 'disc', 'ring'])
   return s;
 }
 
-// Styles: flat (default), line, mono, minimal, glass
+// Duotone (risograph-like) filter: maps luminance to navy -> accent -> light.
+function duotone(a, bg) {
+  const tone = [NAVY, NAVY, a, a, shade(a, 0.45), shade(bg, 0.4)];
+  const ch = (k) => tone.map((t) => (parseInt(t.slice(1 + k * 2, 3 + k * 2), 16) / 255).toFixed(3)).join(' ');
+  return `<filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncR type="table" tableValues="${ch(0)}"/><feFuncG type="table" tableValues="${ch(1)}"/><feFuncB type="table" tableValues="${ch(2)}"/></feComponentTransfer></filter>`;
+}
+
+// Styles: flat (default), line, mono, linemono (line art + duotone), minimal, glass
 function scene(spec) {
   const style = spec.style || 'flat';
   const r = rng(hash(spec.id));
@@ -337,20 +345,20 @@ function scene(spec) {
     s += accents(spec, r, [NAVY, a, shade(s1, -0.2)]);
     s += subjects(spec, { FLOOR, left, a });
     if (style === 'mono') {
-      // duotone / risograph look: map luminance to dark -> accent -> light
-      const tone = [NAVY, NAVY, a, a, shade(a, 0.45), shade(pal.bg, 0.4)];
-      const ch = (k) => tone.map((t) => (parseInt(t.slice(1 + k * 2, 3 + k * 2), 16) / 255).toFixed(3)).join(' ');
-      defs += `<filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
-        <feComponentTransfer><feFuncR type="table" tableValues="${ch(0)}"/><feFuncG type="table" tableValues="${ch(1)}"/><feFuncB type="table" tableValues="${ch(2)}"/></feComponentTransfer></filter>`;
+      defs += duotone(a, pal.bg);
       s = `<g filter="url(#duo)">${s}</g>`;
     }
-  } else if (style === 'line') {
+  } else if (style === 'line' || style === 'linemono') {
     s += `<rect width="${W}" height="${H}" fill="${shade(pal.bg, 0.5)}"/>`;
     s += `<circle cx="${Math.round(cx)}" cy="300" r="250" fill="${s1}" opacity="0.7"/>`;
     s += `<rect x="${left ? 700 : 120}" y="150" width="380" height="300" rx="150" fill="${s2}" opacity="0.6"/>`;
     s += `<path d="M60 ${FLOOR} H${W - 60}" ${ln(3, NAVY)}/>`;
     s += accents(spec, r, [NAVY], ['plus', 'ring', 'wave', 'plus', 'dots']);
     s += `<g style="stroke:${NAVY};stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round">${subjects(spec, { FLOOR, left, a, shadows: false })}</g>`;
+    if (style === 'linemono') {
+      defs += duotone(a, pal.bg);
+      s = `<g filter="url(#duo)">${s}</g>`;
+    }
   } else if (style === 'minimal') {
     s += `<rect width="${W}" height="${H}" fill="${pal.bg}"/>`;
     s += `<circle cx="600" cy="338" r="250" fill="${s1}"/>`;

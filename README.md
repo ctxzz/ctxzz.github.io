@@ -47,6 +47,17 @@ make update
 
 If the module cache gets into a bad state, run `make clean`.
 
+### Thumbnails
+
+Each publication, talk, and award post has a text-free `featured.png` drawn by `scripts/thumbnails/` (line art with a duotone pastel palette). When you add a page, add a line for its folder to `scripts/thumbnails/specs.js` (figures and props that match its content), then render it:
+
+```sh
+node scripts/thumbnails/generate.js            # pages that do not have a thumbnail yet
+node scripts/thumbnails/generate.js <folder>   # re-render specific pages
+```
+
+This needs [Playwright](https://playwright.dev/) with Chromium (`npm i -g playwright && npx playwright install chromium`).
+
 ## License
 
 The code and styles are licensed under the MIT license. [See project license.](LICENSE.md)
