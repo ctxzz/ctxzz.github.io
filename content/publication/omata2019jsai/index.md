@@ -11,8 +11,6 @@ authors:
 - 本田 美和子
 - 桐山 伸也
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2019-06-07T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

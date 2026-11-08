@@ -107,11 +107,9 @@ title: "論文タイトル"
 authors:
 - admin          # 小俣 敦士 / Atsushi Omata は必ず "admin"
 - 著者名2
-author_notes:
-- "Equal contribution"
 date: "YYYY-MM-DDT00:00:00+09:00"
-doi: ""
 publishDate: "YYYY-MM-DDT00:00:00+09:00"
+# "Domestic conference" / "International conference" / "Journal article" のいずれか
 publication_types: ["Domestic conference"]
 publication: "学会名の正式名称"
 publication_short: "学会略称 YYYY"
@@ -121,17 +119,16 @@ tags:
 - Conference paper
 categories:
 featured: false
+# DOI がある場合のみコメントを外す（空のまま残すと壊れたリンクになる）
+# hugoblox:
+#   ids:
+#     doi: "10.xxxx/xxxxx"
 links:
   - name: 学会名
     url: 学会ページURL
-url_pdf: ''
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
+  # PDF がある場合のみコメントを外す
+  # - type: pdf
+  #   url: PDFのURL
 image:
   caption: ''
   focal_point: ""
@@ -141,9 +138,24 @@ slides: ""
 ---
 ```
 
+**cite.bib テンプレート**（`index.md` と同じディレクトリに置く）
+
+```bibtex
+@inproceedings{<ディレクトリ名>,
+  author    = {著者1 and 小俣 敦士 and 著者3},
+  booktitle = {学会名の正式名称},
+  title     = {論文タイトル},
+  year      = {YYYY}
+}
+```
+
+論文誌の場合は `@article` とし、`booktitle` の代わりに `journal`（必要に応じて `volume` / `number` / `pages`）を記載する。DOI があれば `doi` も追加する。
+
+
 **注意事項**
 - 著者名の先頭の発表者マーク（「〇」U+25CB や「◯」U+25EF など、丸囲みの記号すべて）・所属（括弧書き）は除去すること
 - 小俣 敦士 / Atsushi Omata は `admin` と記載すること
+- 廃止されたフィールド（`url_pdf` などの `url_*`、トップレベルの `doi`、`author_notes`）は使わないこと
 - 日付が不明な場合は学会開催日を使用し、不明なら `YYYY-01-01T00:00:00+09:00`
 - 既存業績との重複追加は避けること
 - 詳細は `.ai/prompts/add-publications.md` を参照

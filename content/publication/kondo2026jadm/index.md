@@ -12,8 +12,6 @@ authors:
 - 高橋 善明
 - 渥美 生弘
 - 三澤 清
-author_notes:
-- "Equal contribution"
 date: "2026-03-19T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

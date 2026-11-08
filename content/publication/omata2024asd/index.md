@@ -5,8 +5,6 @@ authors:
 - 香山 壮太
 - 菅家 穣
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-09-26T00:00:00+09:00"
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-09-26T00:00:00+09:00"
@@ -28,7 +26,7 @@ summary: 第30回高齢社会デザイン (ASD) 研究会
 
 tags:
 - Conference paper
-- Large Language Model
+- Large language model
 - Dementia care
 - Data-driven
 - Care coaching

@@ -11,8 +11,6 @@ authors:
 - 坂根 裕
 - 本田 美和子
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2018-12-14T00:00:00+09:00"
 doi: ""
 
@@ -35,7 +33,6 @@ abstract: "本稿では，指導者の認知症ケアコーチング知をMinsky
 summary: 第14回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Collaborative learning
 categories: 

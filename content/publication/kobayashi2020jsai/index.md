@@ -9,8 +9,6 @@ authors:
 - 小野塚 優志
 - 神谷 直輝
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2020-06-09T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

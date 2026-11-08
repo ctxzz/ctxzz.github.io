@@ -3,15 +3,13 @@ title: "時空間依存性を考慮したST-GCNによる救急需要予測モデ
 authors:
 - admin
 - 齊藤 岳児
-- 成瀬 愛子
+- 成瀨 愛子
 - 三島 泰幸
 - 若味 紳太郎
 - 荒井 進也
 - 山下 真理
 - 仲山 智士
 - 前川 裕一郎
-author_notes:
-- "Equal contribution"
 date: "2026-06-11T00:00:00+09:00"
 doi: ""
 

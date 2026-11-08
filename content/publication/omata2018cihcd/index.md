@@ -13,8 +13,6 @@ authors:
 - 坂根 裕
 - 本田 美和子
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2018-09-01T00:00:00+09:00"
 doi: ""
 

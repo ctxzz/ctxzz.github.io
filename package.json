@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "autoprefixer": "^10.5.4",
+    "pagefind": "^1.6.0",
     "postcss": "^8.5.23"
   },
   "dependencies": {

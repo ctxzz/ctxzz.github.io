@@ -4,12 +4,10 @@ authors:
 - 大屋 志友
 - 齊藤 岳児
 - admin
-- 成瀬 愛子
+- 成瀨 愛子
 - 有馬 秀幸
 - 渥美 生弘
 - 前川 裕一郎
-author_notes:
-- "Equal contribution"
 date: "2025-10-29T00:00:00+09:00"
 doi: ""
 

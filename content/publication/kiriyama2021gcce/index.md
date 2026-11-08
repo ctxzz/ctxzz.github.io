@@ -5,8 +5,6 @@ authors:
 - Junichi Yogo
 - admin
 - Shogo Ishikawa
-author_notes:
-- "Equal contribution"
 date: "2021-10-12T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

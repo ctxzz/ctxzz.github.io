@@ -5,8 +5,6 @@ authors:
 - 若味 紳太郎
 - admin
 - 齊藤 岳児
-author_notes:
-- "Equal contribution"
 date: "2026-01-22T00:00:00+09:00"
 doi: ""
 

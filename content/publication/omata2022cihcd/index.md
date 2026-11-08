@@ -6,8 +6,6 @@ authors:
 - 香山 壮太
 - 菅家 穣
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2022-10-23T00:00:00+09:00"
 doi: ""
 

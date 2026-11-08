@@ -40,8 +40,8 @@ abstract: A multidisciplinary Japan–UK Network identified cross-cultural and c
 summary: Cogent Gerontology
 
 tags:
-- Journal
-- Review Article
+- Journal article
+- Review article
 - Open access
 categories: 
 featured: false

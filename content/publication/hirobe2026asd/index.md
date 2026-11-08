@@ -7,8 +7,6 @@ authors:
 - 水野 拓宏
 - 村上 佑順
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2026-03-17T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

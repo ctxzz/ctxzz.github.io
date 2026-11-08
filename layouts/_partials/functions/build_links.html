@@ -25,8 +25,8 @@
 {{ $page := .page }}
 {{ $is_list := .is_list }}
 
-{{ $types := site.Data.link_types.types }}
-{{ $derived := site.Data.link_types.derived }}
+{{ $types := hugo.Data.link_types.types }}
+{{ $derived := hugo.Data.link_types.derived }}
 
 {{ $links := slice }}
 {{/* Site override of blox-tailwind partial: dedup via a plain map because newScratch+SetInMap fails with "assignment to entry in nil map" on Hugo >= 0.155. Remove once fixed upstream. */}}

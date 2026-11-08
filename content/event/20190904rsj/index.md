@@ -40,10 +40,7 @@ image:
   caption: ''
   focal_point: ''
 
-links:
-- name: "Video"
-  url: ""
-  type: video
+links: []
 url_code: ''
 url_slides: ''
 

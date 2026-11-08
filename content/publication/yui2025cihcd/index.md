@@ -5,8 +5,6 @@ authors:
 - admin
 - 岡崎 藍
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2025-11-15T00:00:00+09:00"
 doi: ""
 
@@ -30,7 +28,7 @@ summary: みんなのケア情報学会 第8回年次大会
 
 tags:
 - Conference paper
-- Large Language Model
+- Large language model
 - Care education
 - ICF
 - Generative AI

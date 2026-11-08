@@ -5,8 +5,6 @@ authors:
 - admin
 - 岡﨑 藍
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2026-06-12T00:00:00+09:00"
 doi: ""
 

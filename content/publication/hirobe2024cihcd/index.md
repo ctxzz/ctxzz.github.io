@@ -8,8 +8,6 @@ authors:
 - 三浦 繁夫
 - 樋口 直美
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-10-19T00:00:00+09:00"
 doi: ""
 
@@ -36,7 +34,7 @@ tags:
 - Co-production
 - Dementia care
 - Patient experience
-- Virtual reality
+- VR
 
 categories: 
 featured: false

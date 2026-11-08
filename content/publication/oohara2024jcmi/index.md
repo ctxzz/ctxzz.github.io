@@ -8,8 +8,6 @@ authors:
 - 金 伽耶
 - 金子 美和
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-11-24T00:00:00+09:00"
 doi: ""
 
@@ -34,8 +32,8 @@ summary: 第44回医療情報学連合大会
 tags:
 - Conference paper
 - Chat consultation
-- Chat Assistant
-- Large Language Model
+- Chat assistant
+- Large language model
 categories: 
 featured: false
 

@@ -5,8 +5,6 @@ authors:
 - admin
 - 尾藤 誠司
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2026-03-01T00:00:00+09:00"
 doi: ""
 
@@ -33,7 +31,7 @@ tags:
 - Healthcare
 - Decision making
 - Agent
-- Large Language Model
+- Large language model
 categories: 
 featured: false
 

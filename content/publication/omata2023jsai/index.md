@@ -8,8 +8,6 @@ authors:
 - 菅家 穣
 - 宗形 初枝
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2023-06-08T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

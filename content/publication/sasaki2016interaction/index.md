@@ -7,8 +7,6 @@ authors:
 - 本田 美和子
 - 伊東 美緒
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2016-03-03T00:00:00+09:00"
 doi: ""
 

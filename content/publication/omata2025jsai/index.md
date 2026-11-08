@@ -2,15 +2,13 @@
 title: "リズムゲーム型eスポーツにおけるマルチモーダルデータに基づく高齢者の身体活動分析"
 authors:
 - admin
-- 成瀬 愛子
+- 成瀨 愛子
 - 齊藤 岳児
 - 有馬 秀幸
 - 山崎 智也
 - 畑 雅樹
 - 川本 実子
 - 中村 和正
-author_notes:
-- "Equal contribution"
 date: "2025-05-29T00:00:00+09:00"
 # Schedule page publish date (NOT publication's date).
 publishDate: "2025-05-29T00:00:00+09:00"
@@ -33,7 +31,7 @@ summary: 2025年度人工知能学会全国大会（第39回）
 tags:
 - Conference paper
 - e-sports
-- Multi-modal
+- Multimodal
 - Behavior analysis
 categories: 
 featured: false

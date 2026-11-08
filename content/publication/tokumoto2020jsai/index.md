@@ -8,8 +8,6 @@ authors:
 - 田中 とも江
 - 船橋 美沙子
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2020-06-11T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

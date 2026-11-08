@@ -25,15 +25,15 @@ cat content/publication/hirobe2024vrsj/index.md
 新しい業績を追加する際に必要な情報:
 
 - **title**: 論文タイトル
-- **authors**: 著者リスト（姓名スペース区切り、◯マークは除去）
+- **authors**: 著者リスト（姓名スペース区切り、◯マークは除去。小俣 敦士は `admin`）
 - **date**: 発表日（YYYY-MM-DDTHH:mm:ss+09:00形式）
 - **publication**: 学会名・会議名の正式名称
 - **publication_short**: 学会名の略称
 - **abstract**: アブストラクト（概要）
-- **url_pdf**: PDFファイルのURL
 - **links**: 関連リンク（学会サイトなど）
-  - name: リンク名
-  - url: URL
+  - name: リンク名 / url: URL
+  - PDFがある場合は type: pdf / url: PDFファイルのURL
+- **DOI**: ある場合は `hugoblox.ids.doi` に記載
 - **tags**: タグ（Conference paper, VR, Care educationなど）
 
 ### 4. ディレクトリとファイルの作成
@@ -52,71 +52,48 @@ mkdir -p content/publication/<新しい業績のディレクトリ名>
 ---
 title: "論文タイトル"
 authors:
-- 著者名1
+- admin          # 小俣 敦士 / Atsushi Omata は必ず "admin"
 - 著者名2
-- 著者名3
-author_notes:
-- "Equal contribution"
-date: "YYYY-MM-DDTHH:mm:ss+09:00"
-doi: ""
-
-# Schedule page publish date (NOT publication's date).
-publishDate: "YYYY-MM-DDTHH:mm:ss+09:00"
-
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
+date: "YYYY-MM-DDT00:00:00+09:00"
+publishDate: "YYYY-MM-DDT00:00:00+09:00"
+# "Domestic conference" / "International conference" / "Journal article" のいずれか
 publication_types: ["Domestic conference"]
-
-# Publication name and optional abbreviated publication name.
 publication: "学会名の正式名称"
-publication_short: "学会略称"
-
+publication_short: "学会略称 YYYY"
 abstract: "アブストラクト本文"
-
-# Summary. An optional shortened abstract.
-summary: 学会名の正式名称
-
+summary: "学会名の正式名称"
 tags:
 - Conference paper
-- その他のタグ
-categories: 
+categories:
 featured: false
-
+# DOI がある場合のみコメントを外す（空のまま残すと壊れたリンクになる）
+# hugoblox:
+#   ids:
+#     doi: "10.xxxx/xxxxx"
 links:
   - name: 学会名
-    url: 学会サイトURL
-url_pdf: 'PDFファイルのURL'
-url_code: ''
-url_dataset: ''
-url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+    url: 学会ページURL
+  # PDF がある場合のみコメントを外す
+  # - type: pdf
+  #   url: PDFのURL
 image:
   caption: ''
   focal_point: ""
   preview_only: true
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
 slides: ""
 ---
+```
+
+同じディレクトリに `cite.bib` も作成します。
+
+```bibtex
+@inproceedings{<ディレクトリ名>,
+  author    = {著者1 and 小俣 敦士 and 著者3},
+  booktitle = {学会名の正式名称},
+  title     = {論文タイトル},
+  year      = {YYYY}
+}
 ```
 
 ### 6. 著者名の処理について
@@ -152,10 +129,10 @@ cat content/publication/<新しい業績のディレクトリ名>/index.md
 git status
 
 # ビルドが成功することを確認（オプション）
-hugo # または make serve
+hugo # または make server
 
 # コミット
-git add content/publication/<新しい業績のディレクトリ名>/
+git add content/publication/<新しい業績のディレクトリ名>/  # index.md と cite.bib
 git commit -m "Add publication: <論文タイトル>"
 ```
 
@@ -166,6 +143,7 @@ git commit -m "Add publication: <論文タイトル>"
 3. **引用符**: YAMLで特殊文字を含む場合は引用符で囲む
 4. **URL**: 正確なPDFのURLを確認（conference.vrsj.org/ac2025/program/doc/*.pdf など）
 5. **既存構造の維持**: 既存ファイルの構造とフォーマットを維持する
+6. **廃止フィールド**: `url_pdf` などの `url_*`、トップレベルの `doi`、`author_notes` は使わない
 
 ## 実行例
 

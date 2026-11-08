@@ -5,8 +5,6 @@ authors:
 - 榎本 優香
 - 増川 ねてる
 - 石川 翔吾
-author_notes:
-- "Equal contribution"
 date: "2024-05-31T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).
@@ -30,7 +28,7 @@ summary: 2024年度人工知能学会全国大会（第38回）
 tags:
 - Conference paper
 - Knowledge graph
-- Large Language Model
+- Large language model
 - Chatbot
 categories: 
 featured: false

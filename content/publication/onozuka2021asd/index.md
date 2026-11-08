@@ -7,8 +7,6 @@ authors:
 - admin
 - 石川 翔吾
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2021-03-05T00:00:00+09:00"
 doi: ""
 
@@ -31,7 +29,6 @@ abstract: "認知症ケアの現場において，ケアの質をデータに基
 summary: 第20回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Interaction model
 categories: 

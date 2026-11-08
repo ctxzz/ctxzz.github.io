@@ -11,8 +11,6 @@ authors:
 - 原 寿夫
 - 桐山 伸也
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2018-06-05T00:00:00+09:00"
 
 # Schedule page publish date (NOT publication's date).

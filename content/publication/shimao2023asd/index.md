@@ -7,8 +7,6 @@ authors:
 - admin
 - 石川 翔吾
 - 桐山 伸也
-author_notes:
-- "Equal contribution"
 date: "2023-03-01T00:00:00+09:00"
 doi: ""
 
@@ -31,7 +29,6 @@ abstract: "生涯に亘って心身の健康の基盤となる歩行と姿勢の
 summary: 第26回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Gait improvement
 - Multimodal sensing
 categories: 

@@ -10,8 +10,6 @@ authors:
 - 本田 美和子
 - 原 寿夫
 - 竹林 洋一
-author_notes:
-- "Equal contribution"
 date: "2017-06-12T00:00:00+09:00"
 doi: ""
 
@@ -34,7 +32,6 @@ abstract: "本稿では, 認知症ケアの高度化に向けて, 構造化映�
 summary: 第8回高齢社会デザイン (ASD) 研究会
 
 tags:
-- Journal article
 - Dementia care
 - Collaborative learning
 categories: 

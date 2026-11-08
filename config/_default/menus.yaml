@@ -31,7 +31,7 @@ main:
   #   url: /#news
   #   weight: 13
   - name: Experience
-    url: experience
+    url: /experience/
     weight: 4
   # - name: Projects
   #   url: projects/
