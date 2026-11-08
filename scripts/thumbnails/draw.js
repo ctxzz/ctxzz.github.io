@@ -269,50 +269,23 @@ const PROP_SIZE = { pillow: 1.05, map: 1.15, dome: 1.05 };
 const GROUNDED = { ambulance: 64, bot: 86, trophy: 96, hospital: 104, house: 104, tent: 84, bed: 72, ivstand: 120,
   podium: 116, mic: 84, tree: 96, signpost: 112, mirror: 112, city: 104, dome: 64, gantry: 108, monitor: 108, camera: 112, poster: 124 };
 
-function scene(spec) {
-  const r = rng(hash(spec.id));
-  const pal = PALETTES[spec.palette != null ? spec.palette : hash(spec.id) % PALETTES.length];
-  const a = pal.accent;
-  const [s1, s2, s3] = pal.shapes;
-  const FLOOR = 560;
-  let s = `<rect width="${W}" height="${H}" fill="${pal.bg}"/>`;
-
-  // backdrop: one large circle, an arch, a rounded panel, positioned by seed
-  const left = spec.side ? spec.side === 'left' : hash(spec.id) % 2 === 0;
-  const cx = left ? 330 + r() * 60 : 870 - r() * 60;
-  s += `<circle cx="${Math.round(cx)}" cy="${Math.round(260 + r() * 40)}" r="${Math.round(230 + r() * 30)}" fill="${s1}"/>`;
-  const ax = left ? 820 + r() * 80 : 300 - r() * 80;
-  s += `<path d="M${Math.round(ax - 150)} ${FLOOR} V300 A150 150 0 0 1 ${Math.round(ax + 150)} 300 V${FLOOR}Z" fill="${s2}"/>`;
-  s += `<rect x="${Math.round(r() * 900 + 60)}" y="${Math.round(60 + r() * 60)}" width="${Math.round(140 + r() * 80)}" height="${Math.round(90 + r() * 50)}" rx="18" fill="${s3}" opacity="0.8"/>`;
-  // thin line accents
-  s += `<circle cx="${Math.round(cx + (left ? 200 : -200))}" cy="${Math.round(120 + r() * 60)}" r="${Math.round(70 + r() * 30)}" ${ln(2, NAVY)} opacity="0.35"/>`;
-  s += `<path d="M60 ${FLOOR + 2} H${W - 60}" ${ln(3, NAVY)} opacity="0.85"/>`;
-  s += `<rect x="0" y="${FLOOR}" width="${W}" height="${H - FLOOR}" fill="${shade(pal.bg, -0.03)}"/>`;
-  s += `<path d="M60 ${FLOOR} H${W - 60}" ${ln(3, NAVY)}/>`;
-
-  const accents = spec.accents || ['dots', 'plus', 'wave', 'disc', 'ring'];
-  const spots = [[90, 90], [1080, 80], [560, 60], [1110, 330], [70, 380], [760, 140]];
-  accents.slice(0, 5).forEach((k, i) => {
-    const [x, y] = spots[(i + hash(spec.id)) % spots.length];
-    const col = [NAVY, a, s1, NAVY, a][i];
-    s += `<g transform="translate(${x} ${y}) rotate(${Math.round((r() - 0.5) * 20)})" opacity="${k === 'dots' ? 0.45 : 0.75}">${ACCENT[k](col === s1 ? shade(s1, -0.2) : col)}</g>`;
-  });
-
-  const chars = spec.chars || [];
+// Lay out props and figures; returns SVG markup.
+function subjects(spec, { FLOOR, left, a, shadows = true, figures = true, propZoneOverride, propScale = 1 }) {
+  let s = '';
+  const chars = figures ? spec.chars || [] : [];
   const props = spec.props || [];
   const nC = chars.length;
   const nP = props.length;
   const charZone = nP === 0 ? [360, 840] : left ? [150, 150 + nC * 170] : [W - 150 - nC * 170, W - 150];
-  const propZone = nC === 0 ? [240, 960] : left ? [charZone[1] + 60, W - 90] : [90, charZone[0] - 60];
-
+  const propZone = propZoneOverride || (nC === 0 ? [240, 960] : left ? [charZone[1] + 60, W - 90] : [90, charZone[0] - 60]);
   props.forEach((pr, i) => {
     const name = typeof pr === 'string' ? pr : pr.name;
     const span = (propZone[1] - propZone[0]) / nP;
     const x = propZone[0] + span * (i + 0.5);
     const big = i === 0 ? 1.1 : 0.88;
-    const sc = Math.min(1.3, span / 270) * big * (PROP_SIZE[name] || 1);
+    const sc = Math.min(1.3 * propScale, (span / 270) * propScale) * big * (PROP_SIZE[name] || 1);
     const y = (typeof pr === 'object' && pr.y) || (GROUNDED[name] != null ? Math.round(FLOOR - GROUNDED[name] * sc) : (i % 2 === 0 ? 330 : 280));
-    if (GROUNDED[name] != null) s += `<ellipse cx="${Math.round(x)}" cy="${FLOOR + 4}" rx="${Math.round(120 * sc)}" ry="10" fill="${NAVY}" opacity="0.08"/>`;
+    if (shadows && GROUNDED[name] != null) s += `<ellipse cx="${Math.round(x)}" cy="${FLOOR + 4}" rx="${Math.round(120 * sc)}" ry="10" fill="${NAVY}" opacity="0.08"/>`;
     s += g(Math.round(x), y, sc.toFixed(2), PROP[name](a));
   });
   chars.forEach((ch, i) => {
@@ -323,11 +296,79 @@ function scene(spec) {
     mods.forEach((m) => { opt[m] = true; });
     if (nC > 1 && i % 2 === 1) opt.flip = !opt.flip;
     const sc = nC >= 3 ? 1.08 : 1.2;
-    s += `<ellipse cx="${Math.round(x)}" cy="${FLOOR + 4}" rx="${Math.round(52 * sc)}" ry="9" fill="${NAVY}" opacity="0.1"/>`;
+    if (shadows) s += `<ellipse cx="${Math.round(x)}" cy="${FLOOR + 4}" rx="${Math.round(52 * sc)}" ry="9" fill="${NAVY}" opacity="0.1"/>`;
     s += figure(type, Math.round(x), FLOOR, sc, opt);
   });
+  return s;
+}
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">${s}</svg>`;
+function accents(spec, r, cols, list = ['dots', 'plus', 'wave', 'disc', 'ring']) {
+  const spots = [[90, 90], [1080, 80], [560, 60], [1110, 330], [70, 380], [760, 140]];
+  let s = '';
+  list.slice(0, 5).forEach((k, i) => {
+    const [x, y] = spots[(i + hash(spec.id)) % spots.length];
+    s += `<g transform="translate(${x} ${y}) rotate(${Math.round((r() - 0.5) * 20)})" opacity="${k === 'dots' ? 0.45 : 0.75}">${ACCENT[k](cols[i % cols.length])}</g>`;
+  });
+  return s;
+}
+
+// Styles: flat (default), line, mono, minimal, glass
+function scene(spec) {
+  const style = spec.style || 'flat';
+  const r = rng(hash(spec.id));
+  const pal = PALETTES[spec.palette != null ? spec.palette : hash(spec.id) % PALETTES.length];
+  const a = pal.accent;
+  const [s1, s2, s3] = pal.shapes;
+  const FLOOR = 560;
+  const left = spec.side ? spec.side === 'left' : hash(spec.id) % 2 === 0;
+  const cx = left ? 330 + r() * 60 : 870 - r() * 60;
+  let s = '';
+  let defs = '';
+
+  if (style === 'flat' || style === 'mono') {
+    s += `<rect width="${W}" height="${H}" fill="${pal.bg}"/>`;
+    s += `<circle cx="${Math.round(cx)}" cy="${Math.round(260 + r() * 40)}" r="${Math.round(230 + r() * 30)}" fill="${s1}"/>`;
+    const ax = left ? 820 + r() * 80 : 300 - r() * 80;
+    s += `<path d="M${Math.round(ax - 150)} ${FLOOR} V300 A150 150 0 0 1 ${Math.round(ax + 150)} 300 V${FLOOR}Z" fill="${s2}"/>`;
+    s += `<rect x="${Math.round(r() * 900 + 60)}" y="${Math.round(60 + r() * 60)}" width="${Math.round(140 + r() * 80)}" height="${Math.round(90 + r() * 50)}" rx="18" fill="${s3}" opacity="0.8"/>`;
+    s += `<circle cx="${Math.round(cx + (left ? 200 : -200))}" cy="${Math.round(120 + r() * 60)}" r="${Math.round(70 + r() * 30)}" ${ln(2, NAVY)} opacity="0.35"/>`;
+    s += `<rect x="0" y="${FLOOR}" width="${W}" height="${H - FLOOR}" fill="${shade(pal.bg, -0.03)}"/>`;
+    s += `<path d="M60 ${FLOOR} H${W - 60}" ${ln(3, NAVY)}/>`;
+    s += accents(spec, r, [NAVY, a, shade(s1, -0.2)]);
+    s += subjects(spec, { FLOOR, left, a });
+    if (style === 'mono') {
+      // duotone / risograph look: map luminance to dark -> accent -> light
+      const tone = [NAVY, NAVY, a, a, shade(a, 0.45), shade(pal.bg, 0.4)];
+      const ch = (k) => tone.map((t) => (parseInt(t.slice(1 + k * 2, 3 + k * 2), 16) / 255).toFixed(3)).join(' ');
+      defs += `<filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer><feFuncR type="table" tableValues="${ch(0)}"/><feFuncG type="table" tableValues="${ch(1)}"/><feFuncB type="table" tableValues="${ch(2)}"/></feComponentTransfer></filter>`;
+      s = `<g filter="url(#duo)">${s}</g>`;
+    }
+  } else if (style === 'line') {
+    s += `<rect width="${W}" height="${H}" fill="${shade(pal.bg, 0.5)}"/>`;
+    s += `<circle cx="${Math.round(cx)}" cy="300" r="250" fill="${s1}" opacity="0.7"/>`;
+    s += `<rect x="${left ? 700 : 120}" y="150" width="380" height="300" rx="150" fill="${s2}" opacity="0.6"/>`;
+    s += `<path d="M60 ${FLOOR} H${W - 60}" ${ln(3, NAVY)}/>`;
+    s += accents(spec, r, [NAVY], ['plus', 'ring', 'wave', 'plus', 'dots']);
+    s += `<g style="stroke:${NAVY};stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round">${subjects(spec, { FLOOR, left, a, shadows: false })}</g>`;
+  } else if (style === 'minimal') {
+    s += `<rect width="${W}" height="${H}" fill="${pal.bg}"/>`;
+    s += `<circle cx="600" cy="338" r="250" fill="${s1}"/>`;
+    s += `<circle cx="${600 + 250 * Math.cos(-0.6)}" cy="${338 + 250 * Math.sin(-0.6)}" r="44" fill="${a}"/>`;
+    s += `<circle cx="600" cy="338" r="300" ${ln(2, NAVY)} opacity="0.25"/>`;
+    s += accents(spec, r, [NAVY, a], ['dots', 'plus', 'dots', 'plus']);
+    const props = (spec.props || []).slice(0, 2);
+    s += subjects({ ...spec, props }, { FLOOR: 470, left, a, figures: false, shadows: false, propZoneOverride: props.length > 1 ? [330, 870] : [450, 750], propScale: 1.2 });
+  } else if (style === 'glass') {
+    defs += `<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+      <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${shade(s1, 0.3)}"/><stop offset="1" stop-color="${shade(s2, 0.3)}"/></linearGradient>`;
+    s += `<rect width="${W}" height="${H}" fill="url(#bgg)"/>`;
+    s += `<g filter="url(#blur)"><circle cx="${Math.round(cx)}" cy="200" r="230" fill="${s1}"/><circle cx="${Math.round(W - cx)}" cy="480" r="260" fill="${s2}"/><circle cx="600" cy="300" r="150" fill="${a}" opacity="0.6"/></g>`;
+    s += `<rect x="80" y="70" width="1040" height="535" rx="40" fill="#ffffff" opacity="0.38" stroke="#ffffff" stroke-width="2"/>`;
+    s += `<path d="M120 ${FLOOR} H${W - 120}" ${ln(2, NAVY)} opacity="0.4"/>`;
+    s += subjects(spec, { FLOOR, left, a });
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><defs>${defs}</defs>${s}</svg>`;
 }
 
 module.exports = { scene, W, H, PROP, FIG, ACCENT };
