@@ -2,7 +2,7 @@
 title: Evidence-based 認知症ケアに基づく映像を用いた協調学習環境の構築と評価
 
 event: 郡山医師会・郡山市共催 市民公開講座
-event_url: ''
+event_url: 'http://bigheart-hp.net/gyoji-2018.html'
 
 location: 福島県郡山市中央公民館多目的ホール
 address:
